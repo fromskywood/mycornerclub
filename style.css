@@ -1246,7 +1246,7 @@ html[lang="ru"] .editorial-title-en { display: none; }
     align-items: center;
   }
 
-  .dressup-wrap { display: flex; justify-content: center; }
+  .dressup-wrap { display: flex; justify-content: center; width: 100%; }
   .dressup-img { height: 170px; width: auto; }
 }
 .club-item-bullet {

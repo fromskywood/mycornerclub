@@ -1,0 +1,251 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1640" viewBox="0 0 1900 1640">
+  <title>My Corner Russian uppercase alphabet library</title>
+  <desc>Russian uppercase А-Я vector alphabet inspired by the hand-drawn My Corner logo style.</desc>
+  <defs>
+    <style>
+      .paper { fill: #fffdf9; }
+      .ink {
+        fill: none;
+        stroke: #080808;
+        stroke-width: 14;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        filter: url(#handWobble);
+      }
+      .dot {
+        fill: none;
+        stroke: #080808;
+        stroke-width: 12;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        filter: url(#handWobble);
+      }
+      .label {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        letter-spacing: 0;
+        fill: #777;
+      }
+      .guide {
+        stroke: #ece7df;
+        stroke-width: 2;
+      }
+    </style>
+    <filter id="handWobble" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="7" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.8"/>
+    </filter>
+
+    <symbol id="glyph-RU-A" viewBox="0 0 120 160">
+      <path class="ink" d="M22 136 L59 22 L99 136"/>
+      <path class="ink" d="M37 94 C51 91 70 91 85 94"/>
+    </symbol>
+    <symbol id="glyph-RU-BE" viewBox="0 0 120 160">
+      <path class="ink" d="M30 27 L29 136"/>
+      <path class="ink" d="M33 29 C56 27 77 27 98 29"/>
+      <path class="ink" d="M31 80 C52 77 75 79 89 89 C105 101 101 128 82 136 C68 142 48 140 30 135"/>
+    </symbol>
+    <symbol id="glyph-RU-VE" viewBox="0 0 120 160">
+      <path class="ink" d="M28 25 L28 137"/>
+      <path class="ink" d="M29 27 C77 19 99 33 95 58 C92 78 70 83 31 82"/>
+      <path class="ink" d="M31 82 C78 78 103 91 99 116 C95 140 67 143 29 136"/>
+    </symbol>
+    <symbol id="glyph-RU-GE" viewBox="0 0 120 160">
+      <path class="ink" d="M32 28 L31 136"/>
+      <path class="ink" d="M34 29 C56 28 78 28 100 29"/>
+    </symbol>
+    <symbol id="glyph-RU-DE" viewBox="0 0 120 160">
+      <path class="ink" d="M24 135 C38 101 47 66 52 28"/>
+      <path class="ink" d="M53 28 C70 27 86 28 99 30 L100 135"/>
+      <path class="ink" d="M18 135 C45 138 80 138 106 135"/>
+      <path class="ink" d="M18 135 L15 148"/>
+      <path class="ink" d="M106 135 L109 148"/>
+    </symbol>
+    <symbol id="glyph-RU-E" viewBox="0 0 120 160">
+      <path class="ink" d="M32 27 L30 136"/>
+      <path class="ink" d="M34 29 C55 28 76 28 96 29"/>
+      <path class="ink" d="M32 82 C51 80 68 80 87 82"/>
+      <path class="ink" d="M31 135 C54 136 77 136 99 134"/>
+    </symbol>
+    <symbol id="glyph-RU-YO" viewBox="0 0 120 160">
+      <path class="dot" d="M47 16 L47 17"/>
+      <path class="dot" d="M78 16 L78 17"/>
+      <path class="ink" d="M32 31 L30 136"/>
+      <path class="ink" d="M34 33 C55 32 76 32 96 33"/>
+      <path class="ink" d="M32 84 C51 82 68 82 87 84"/>
+      <path class="ink" d="M31 135 C54 136 77 136 99 134"/>
+    </symbol>
+    <symbol id="glyph-RU-ZHE" viewBox="0 0 120 160">
+      <path class="ink" d="M60 27 L60 136"/>
+      <path class="ink" d="M18 31 C31 51 43 68 58 83"/>
+      <path class="ink" d="M102 31 C89 51 77 68 62 83"/>
+      <path class="ink" d="M23 136 C35 113 46 98 59 84"/>
+      <path class="ink" d="M97 136 C85 113 74 98 61 84"/>
+    </symbol>
+    <symbol id="glyph-RU-ZE" viewBox="0 0 120 160">
+      <path class="ink" d="M31 41 C48 24 83 24 94 43 C106 64 86 79 62 81"/>
+      <path class="ink" d="M61 81 C91 80 105 99 96 120 C87 142 49 145 27 125"/>
+    </symbol>
+    <symbol id="glyph-RU-I" viewBox="0 0 120 160">
+      <path class="ink" d="M27 28 L27 136"/>
+      <path class="ink" d="M94 28 L93 136"/>
+      <path class="ink" d="M93 29 L28 136"/>
+    </symbol>
+    <symbol id="glyph-RU-SHORT-I" viewBox="0 0 120 160">
+      <path class="ink" d="M42 17 C51 25 68 25 78 17"/>
+      <path class="ink" d="M27 34 L27 136"/>
+      <path class="ink" d="M94 34 L93 136"/>
+      <path class="ink" d="M93 35 L28 136"/>
+    </symbol>
+    <symbol id="glyph-RU-KA" viewBox="0 0 120 160">
+      <path class="ink" d="M30 28 L29 137"/>
+      <path class="ink" d="M94 30 C77 50 58 68 31 84"/>
+      <path class="ink" d="M52 78 C68 98 84 116 100 136"/>
+    </symbol>
+    <symbol id="glyph-RU-EL" viewBox="0 0 120 160">
+      <path class="ink" d="M22 136 C37 101 46 66 52 28"/>
+      <path class="ink" d="M53 28 C70 27 85 28 99 30 L100 136"/>
+    </symbol>
+    <symbol id="glyph-RU-EM" viewBox="0 0 120 160">
+      <path class="ink" d="M19 136 L22 27 L60 83 L98 27 L102 136"/>
+    </symbol>
+    <symbol id="glyph-RU-EN" viewBox="0 0 120 160">
+      <path class="ink" d="M27 27 L27 137"/>
+      <path class="ink" d="M94 27 L92 137"/>
+      <path class="ink" d="M30 82 C50 79 70 80 91 82"/>
+    </symbol>
+    <symbol id="glyph-RU-O" viewBox="0 0 120 160">
+      <path class="ink" d="M61 24 C89 24 104 50 102 82 C100 117 83 139 58 138 C31 137 17 112 19 80 C21 47 36 24 61 24"/>
+    </symbol>
+    <symbol id="glyph-RU-PE" viewBox="0 0 120 160">
+      <path class="ink" d="M28 136 L29 29"/>
+      <path class="ink" d="M29 29 C50 27 72 27 94 29"/>
+      <path class="ink" d="M94 29 L94 136"/>
+    </symbol>
+    <symbol id="glyph-RU-ER" viewBox="0 0 120 160">
+      <path class="ink" d="M30 136 L30 27"/>
+      <path class="ink" d="M32 29 C76 21 99 38 96 65 C93 92 65 99 31 91"/>
+    </symbol>
+    <symbol id="glyph-RU-ES" viewBox="0 0 120 160">
+      <path class="ink" d="M94 39 C79 22 47 21 29 43 C9 68 12 109 34 128 C53 144 79 139 96 122"/>
+    </symbol>
+    <symbol id="glyph-RU-TE" viewBox="0 0 120 160">
+      <path class="ink" d="M20 30 C47 27 74 27 101 30"/>
+      <path class="ink" d="M61 31 L60 136"/>
+    </symbol>
+    <symbol id="glyph-RU-U" viewBox="0 0 120 160">
+      <path class="ink" d="M22 28 C36 58 51 85 66 101"/>
+      <path class="ink" d="M101 28 C85 72 70 108 48 136"/>
+    </symbol>
+    <symbol id="glyph-RU-EF" viewBox="0 0 120 160">
+      <path class="ink" d="M60 27 L60 136"/>
+      <path class="ink" d="M58 55 C35 45 19 57 20 80 C21 103 37 115 59 105"/>
+      <path class="ink" d="M62 55 C86 45 102 57 101 80 C100 103 83 115 61 105"/>
+    </symbol>
+    <symbol id="glyph-RU-HA" viewBox="0 0 120 160">
+      <path class="ink" d="M24 30 L97 136"/>
+      <path class="ink" d="M98 29 L23 136"/>
+    </symbol>
+    <symbol id="glyph-RU-TSE" viewBox="0 0 120 160">
+      <path class="ink" d="M27 28 L27 136"/>
+      <path class="ink" d="M91 28 L91 136"/>
+      <path class="ink" d="M28 136 C50 138 72 138 94 136"/>
+      <path class="ink" d="M94 136 L100 150"/>
+    </symbol>
+    <symbol id="glyph-RU-CHE" viewBox="0 0 120 160">
+      <path class="ink" d="M25 30 L25 74 C25 93 41 102 59 95 C70 91 80 86 92 79"/>
+      <path class="ink" d="M92 29 L92 136"/>
+    </symbol>
+    <symbol id="glyph-RU-SHA" viewBox="0 0 120 160">
+      <path class="ink" d="M23 28 L23 136"/>
+      <path class="ink" d="M60 29 L60 136"/>
+      <path class="ink" d="M97 28 L97 136"/>
+      <path class="ink" d="M23 136 C47 139 73 139 98 136"/>
+    </symbol>
+    <symbol id="glyph-RU-SHCHA" viewBox="0 0 120 160">
+      <path class="ink" d="M19 28 L19 136"/>
+      <path class="ink" d="M55 29 L55 136"/>
+      <path class="ink" d="M91 28 L91 136"/>
+      <path class="ink" d="M19 136 C43 139 69 139 94 136"/>
+      <path class="ink" d="M94 136 L101 150"/>
+    </symbol>
+    <symbol id="glyph-RU-HARD" viewBox="0 0 120 160">
+      <path class="ink" d="M18 29 C33 28 49 28 64 30"/>
+      <path class="ink" d="M45 30 L45 136"/>
+      <path class="ink" d="M47 81 C68 78 91 82 101 99 C113 121 96 141 73 140 C63 140 53 138 45 135"/>
+    </symbol>
+    <symbol id="glyph-RU-YERU" viewBox="0 0 120 160">
+      <path class="ink" d="M26 28 L26 136"/>
+      <path class="ink" d="M28 81 C49 78 72 82 82 99 C94 121 77 141 54 140 C44 140 34 138 26 135"/>
+      <path class="ink" d="M98 28 L98 136"/>
+    </symbol>
+    <symbol id="glyph-RU-SOFT" viewBox="0 0 120 160">
+      <path class="ink" d="M30 28 L30 136"/>
+      <path class="ink" d="M32 81 C53 78 76 82 86 99 C98 121 81 141 58 140 C48 140 38 138 30 135"/>
+    </symbol>
+    <symbol id="glyph-RU-REVERSE-E" viewBox="0 0 120 160">
+      <path class="ink" d="M27 40 C45 23 80 24 96 47 C112 70 106 111 84 129 C64 146 36 140 24 122"/>
+      <path class="ink" d="M48 82 C66 80 83 80 101 82"/>
+    </symbol>
+    <symbol id="glyph-RU-YU" viewBox="0 0 120 160">
+      <path class="ink" d="M20 28 L20 136"/>
+      <path class="ink" d="M22 82 C36 80 48 80 59 82"/>
+      <path class="ink" d="M81 24 C104 25 113 52 112 82 C111 116 99 139 78 138 C56 137 47 112 48 81 C49 49 61 23 81 24"/>
+    </symbol>
+    <symbol id="glyph-RU-YA" viewBox="0 0 120 160">
+      <path class="ink" d="M94 136 L94 27"/>
+      <path class="ink" d="M93 29 C52 20 27 38 30 65 C33 91 61 98 93 90"/>
+      <path class="ink" d="M69 91 L24 136"/>
+    </symbol>
+  </defs>
+
+  <rect class="paper" width="1900" height="1640"/>
+  <text x="90" y="76" class="label">MY CORNER Russian uppercase font library - restored v1 style - full А-Я</text>
+
+  <g transform="translate(70 115)">
+    <path class="guide" d="M0 130 H1760"/>
+    <path class="guide" d="M0 310 H1760"/>
+    <path class="guide" d="M0 490 H1760"/>
+    <path class="guide" d="M0 670 H1760"/>
+    <path class="guide" d="M0 850 H1760"/>
+    <path class="guide" d="M0 1030 H1760"/>
+
+    <g transform="translate(0 0)"><use href="#glyph-RU-A" width="120" height="160"/><text class="label" x="50" y="174">А</text></g>
+    <g transform="translate(190 0)"><use href="#glyph-RU-BE" width="120" height="160"/><text class="label" x="50" y="174">Б</text></g>
+    <g transform="translate(380 0)"><use href="#glyph-RU-VE" width="120" height="160"/><text class="label" x="50" y="174">В</text></g>
+    <g transform="translate(570 0)"><use href="#glyph-RU-GE" width="120" height="160"/><text class="label" x="50" y="174">Г</text></g>
+    <g transform="translate(760 0)"><use href="#glyph-RU-DE" width="120" height="160"/><text class="label" x="50" y="174">Д</text></g>
+    <g transform="translate(950 0)"><use href="#glyph-RU-E" width="120" height="160"/><text class="label" x="50" y="174">Е</text></g>
+    <g transform="translate(1140 0)"><use href="#glyph-RU-YO" width="120" height="160"/><text class="label" x="50" y="174">Ё</text></g>
+
+    <g transform="translate(0 205)"><use href="#glyph-RU-ZHE" width="120" height="160"/><text class="label" x="50" y="174">Ж</text></g>
+    <g transform="translate(190 205)"><use href="#glyph-RU-ZE" width="120" height="160"/><text class="label" x="50" y="174">З</text></g>
+    <g transform="translate(380 205)"><use href="#glyph-RU-I" width="120" height="160"/><text class="label" x="50" y="174">И</text></g>
+    <g transform="translate(570 205)"><use href="#glyph-RU-SHORT-I" width="120" height="160"/><text class="label" x="50" y="174">Й</text></g>
+    <g transform="translate(760 205)"><use href="#glyph-RU-KA" width="120" height="160"/><text class="label" x="50" y="174">К</text></g>
+    <g transform="translate(950 205)"><use href="#glyph-RU-EL" width="120" height="160"/><text class="label" x="50" y="174">Л</text></g>
+    <g transform="translate(1140 205)"><use href="#glyph-RU-EM" width="120" height="160"/><text class="label" x="50" y="174">М</text></g>
+
+    <g transform="translate(0 410)"><use href="#glyph-RU-EN" width="120" height="160"/><text class="label" x="50" y="174">Н</text></g>
+    <g transform="translate(190 410)"><use href="#glyph-RU-O" width="120" height="160"/><text class="label" x="50" y="174">О</text></g>
+    <g transform="translate(380 410)"><use href="#glyph-RU-PE" width="120" height="160"/><text class="label" x="50" y="174">П</text></g>
+    <g transform="translate(570 410)"><use href="#glyph-RU-ER" width="120" height="160"/><text class="label" x="50" y="174">Р</text></g>
+    <g transform="translate(760 410)"><use href="#glyph-RU-ES" width="120" height="160"/><text class="label" x="50" y="174">С</text></g>
+    <g transform="translate(950 410)"><use href="#glyph-RU-TE" width="120" height="160"/><text class="label" x="50" y="174">Т</text></g>
+    <g transform="translate(1140 410)"><use href="#glyph-RU-U" width="120" height="160"/><text class="label" x="50" y="174">У</text></g>
+
+    <g transform="translate(0 615)"><use href="#glyph-RU-EF" width="120" height="160"/><text class="label" x="50" y="174">Ф</text></g>
+    <g transform="translate(190 615)"><use href="#glyph-RU-HA" width="120" height="160"/><text class="label" x="50" y="174">Х</text></g>
+    <g transform="translate(380 615)"><use href="#glyph-RU-TSE" width="120" height="160"/><text class="label" x="50" y="174">Ц</text></g>
+    <g transform="translate(570 615)"><use href="#glyph-RU-CHE" width="120" height="160"/><text class="label" x="50" y="174">Ч</text></g>
+    <g transform="translate(760 615)"><use href="#glyph-RU-SHA" width="120" height="160"/><text class="label" x="50" y="174">Ш</text></g>
+    <g transform="translate(950 615)"><use href="#glyph-RU-SHCHA" width="120" height="160"/><text class="label" x="50" y="174">Щ</text></g>
+    <g transform="translate(1140 615)"><use href="#glyph-RU-HARD" width="120" height="160"/><text class="label" x="50" y="174">Ъ</text></g>
+
+    <g transform="translate(0 820)"><use href="#glyph-RU-YERU" width="120" height="160"/><text class="label" x="50" y="174">Ы</text></g>
+    <g transform="translate(190 820)"><use href="#glyph-RU-SOFT" width="120" height="160"/><text class="label" x="50" y="174">Ь</text></g>
+    <g transform="translate(380 820)"><use href="#glyph-RU-REVERSE-E" width="120" height="160"/><text class="label" x="50" y="174">Э</text></g>
+    <g transform="translate(570 820)"><use href="#glyph-RU-YU" width="120" height="160"/><text class="label" x="50" y="174">Ю</text></g>
+    <g transform="translate(760 820)"><use href="#glyph-RU-YA" width="120" height="160"/><text class="label" x="50" y="174">Я</text></g>
+  </g>
+</svg>

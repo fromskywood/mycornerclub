@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Corner — онлайн-журнал и женский клуб</title>
+  <meta name="description" content="My Corner — онлайн-журнал и закрытый женский клуб о стиле, самовыражении, уюте и маленьких вещах, которые помогают лучше понять себя.">
+  <meta property="og:title" content="My Corner — онлайн-журнал и женский клуб">
+  <meta property="og:description" content="Место, где вещи становятся больше, чем вещами.">
+  <meta property="og:image" content="images/logo.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="images/logo-mark.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Cormorant:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="src/styles/fonts.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ─── PRELOADER ─────────────────────────────── -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <img src="images/logo-mark.png" alt="My Corner" class="preloader-mark">
+      <img src="images/logo.png" alt="My Corner" class="preloader-logo">
+    </div>
+  </div>
+
+  <!-- ─── HEADER ────────────────────────────────── -->
+  <header id="header">
+    <div class="container header-inner">
+      <a href="#" class="header-logo">
+        <img src="images/logo.png" alt="My Corner" height="36">
+      </a>
+
+      <nav class="header-nav" id="mainNav">
+        <a href="#inside"        class="nav-link" data-key="nav.inside"></a>
+        <a href="#about"  class="nav-link" data-key="nav.aboutAuthor"></a>
+        <a href="#demo"          class="nav-link" data-key="nav.demo"></a>
+        <a href="#reviews"       class="nav-link" data-key="nav.reviews"></a>
+        <a href="#faq"           class="nav-link" data-key="nav.faq"></a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="lang-btn" id="langBtn" aria-label="Переключить язык">
+          <span class="lang-ru active">RU</span>
+          <span class="lang-divider">/</span>
+          <span class="lang-en">EN</span>
+        </button>
+        <a href="#pricing" class="btn btn-primary btn-sm header-cta" data-key="nav.subscribe"></a>
+        <button class="burger" id="burgerBtn" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile nav -->
+    <div class="mobile-menu" id="mobileMenu">
+      <nav class="mobile-nav">
+        <a href="#inside"       class="mobile-nav-link" data-key="nav.inside"></a>
+        <a href="#about" class="mobile-nav-link" data-key="nav.aboutAuthor"></a>
+        <a href="#demo"         class="mobile-nav-link" data-key="nav.demo"></a>
+        <a href="#reviews"      class="mobile-nav-link" data-key="nav.reviews"></a>
+        <a href="#faq"          class="mobile-nav-link" data-key="nav.faq"></a>
+        <a href="#pricing" class="btn btn-primary mobile-buy" data-key="nav.subscribe"></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ─── HERO ──────────────────────────────────── -->
+  <section id="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <div class="hero-logo-wrap">
+          <img src="images/logo.png" alt="My Corner" class="hero-logo-title">
+        </div>
+        <div class="hero-eyebrow">
+          <span class="eyebrow-line"></span>
+          <span class="eyebrow-text">by Dasha Zhukova</span>
+          <span class="eyebrow-line"></span>
+        </div>
+        <h1 class="hero-title" data-key="hero.tagline"></h1>
+        <p class="hero-subtitle" data-key="hero.subtitle"></p>
+        <div class="hero-ctas">
+          <a id="heroBuyBtn" href="#pricing" class="btn btn-primary btn-lg" data-key="hero.cta"></a>
+          <a id="heroDemoBtn" href="#demo"   class="btn btn-outline btn-lg" data-key="hero.demoCta"></a>
+        </div>
+      </div>
+
+      <!-- Right column: PNG figure + speech bubble -->
+      <div class="hero-photo-col">
+        <img src="images/Png fig/1_transparent_clean_v2.png?v=2" alt="My Corner" loading="lazy">
+        <div class="hero-bubble">
+          <img src="images/Png fig/bubble.png?v=2" alt="" class="hero-bubble-img">
+          <span class="hero-bubble-text" data-lang-ru="Счастье в моменте" data-lang-en="Happiness in the moment"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── GUIDE PROMO ──────────────────────────── -->
+  <section id="guide-promo" class="section-guide-promo">
+    <div class="container">
+      <div class="guide-promo-inner fade-up">
+        <div class="guide-promo-text">
+          <span class="section-eyebrow" data-lang-ru="Бесплатный гайд" data-lang-en="Free guide"></span>
+          <h2 class="guide-promo-title">Effortless Chic</h2>
+          <p class="guide-promo-desc" data-lang-ru="Гайд по стилю от My Corner — о том, как одеваться так, чтобы из шкафа выпадало только красивое." data-lang-en="A My Corner style guide — about dressing so that only beautiful things fall out of your wardrobe."></p>
+        </div>
+        <div class="guide-promo-right">
+          <div class="guide-cover-card" aria-hidden="true">
+            <span class="guide-cover-eyebrow">ГАЙД ПО СТИЛЮ · MY CORNER</span>
+            <span class="guide-cover-title">Effortless<br>Chic</span>
+            <span class="guide-cover-quote">«из моего шкафа выпадает<br>только красивое»</span>
+          </div>
+          <!-- Замените guide-cover-card на <img> когда гайд будет готов:
+               <img src="images/guide-cover.jpg" alt="Effortless Chic — гайд по стилю" class="guide-cover-img"> -->
+          <a href="guide.html" class="btn btn-primary guide-promo-btn" data-lang-ru="Забрать гайд" data-lang-en="Get the guide"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PHOTO JOURNAL ───────────────────────── -->
+  <section id="photo-journal" class="section-photo-journal">
+    <div class="container pj-header">
+      <h2 class="photo-journal-title">My corner journal</h2>
+    </div>
+    <div class="pj-slider">
+      <button class="pj-nav pj-prev" aria-label="Предыдущая группа">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15,18 9,12 15,6"/></svg>
+      </button>
+      <div class="pj-track-wrap">
+        <div class="pj-track" id="pjTrack">
+
+          <div class="pj-group">
+            <div class="pj-frame-outer"><div class="pj-frame-inner"><img src="images/daria%20ph/1.jpg" alt="My Corner — 1" loading="lazy"></div><svg class="pj-pencil-frame" viewBox="0 0 250 376" fill="none" aria-hidden="true"><path d="M12,10 C60,4 180,6 240,10 C246,12 248,20 246,66 C244,145 244,240 246,342 C246,362 240,368 202,366 C156,364 78,366 13,364 C6,364 2,358 4,309 C6,221 6,88 12,10 Z" stroke="#AD4B27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="pj-frame-outer"><div class="pj-frame-inner"><img src="images/daria%20ph/2.jpg" alt="My Corner — 2" loading="lazy"></div><svg class="pj-pencil-frame" viewBox="0 0 250 376" fill="none" aria-hidden="true"><path d="M12,10 C60,4 180,6 240,10 C246,12 248,20 246,66 C244,145 244,240 246,342 C246,362 240,368 202,366 C156,364 78,366 13,364 C6,364 2,358 4,309 C6,221 6,88 12,10 Z" stroke="#AD4B27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="pj-frame-outer"><div class="pj-frame-inner"><img src="images/daria%20ph/3.jpg" alt="My Corner — 3" loading="lazy"></div><svg class="pj-pencil-frame" viewBox="0 0 250 376" fill="none" aria-hidden="true"><path d="M12,10 C60,4 180,6 240,10 C246,12 248,20 246,66 C244,145 244,240 246,342 C246,362 240,368 202,366 C156,364 78,366 13,364 C6,364 2,358 4,309 C6,221 6,88 12,10 Z" stroke="#AD4B27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          </div>
+
+          <div class="pj-group">
+            <div class="pj-frame-outer"><div class="pj-frame-inner"><img src="images/daria%20ph/4.jpg" alt="My Corner — 4" loading="lazy"></div><svg class="pj-pencil-frame" viewBox="0 0 250 376" fill="none" aria-hidden="true"><path d="M12,10 C60,4 180,6 240,10 C246,12 248,20 246,66 C244,145 244,240 246,342 C246,362 240,368 202,366 C156,364 78,366 13,364 C6,364 2,358 4,309 C6,221 6,88 12,10 Z" stroke="#AD4B27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="pj-frame-outer"><div class="pj-frame-inner"><img src="images/daria%20ph/5.jpg" alt="My Corner — 5" loading="lazy"></div><svg class="pj-pencil-frame" viewBox="0 0 250 376" fill="none" aria-hidden="true"><path d="M12,10 C60,4 180,6 240,10 C246,12 248,20 246,66 C244,145 244,240 246,342 C246,362 240,368 202,366 C156,364 78,366 13,364 C6,364 2,358 4,309 C6,221 6,88 12,10 Z" stroke="#AD4B27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="pj-frame-outer"><div class="pj-frame-inner"><img src="images/daria%20ph/6.jpg" alt="My Corner — 6" loading="lazy"></div><svg class="pj-pencil-frame" viewBox="0 0 250 376" fill="none" aria-hidden="true"><path d="M12,10 C60,4 180,6 240,10 C246,12 248,20 246,66 C244,145 244,240 246,342 C246,362 240,368 202,366 C156,364 78,366 13,364 C6,364 2,358 4,309 C6,221 6,88 12,10 Z" stroke="#AD4B27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          </div>
+
+          <div class="pj-group">
+            <div class="pj-frame-outer"><div class="pj-frame-inner"><img src="images/daria%20ph/7.jpg" alt="My Corner — 7" loading="lazy"></div><svg class="pj-pencil-frame" viewBox="0 0 250 376" fill="none" aria-hidden="true"><path d="M12,10 C60,4 180,6 240,10 C246,12 248,20 246,66 C244,145 244,240 246,342 C246,362 240,368 202,366 C156,364 78,366 13,364 C6,364 2,358 4,309 C6,221 6,88 12,10 Z" stroke="#AD4B27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="pj-frame-outer"><div class="pj-frame-inner"><img src="images/daria%20ph/8.jpg" alt="My Corner — 8" loading="lazy"></div><svg class="pj-pencil-frame" viewBox="0 0 250 376" fill="none" aria-hidden="true"><path d="M12,10 C60,4 180,6 240,10 C246,12 248,20 246,66 C244,145 244,240 246,342 C246,362 240,368 202,366 C156,364 78,366 13,364 C6,364 2,358 4,309 C6,221 6,88 12,10 Z" stroke="#AD4B27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="pj-frame-outer"><div class="pj-frame-inner"><img src="images/daria%20ph/8.1.jpg" alt="My Corner — 8.1" loading="lazy"></div><svg class="pj-pencil-frame" viewBox="0 0 250 376" fill="none" aria-hidden="true"><path d="M12,10 C60,4 180,6 240,10 C246,12 248,20 246,66 C244,145 244,240 246,342 C246,362 240,368 202,366 C156,364 78,366 13,364 C6,364 2,358 4,309 C6,221 6,88 12,10 Z" stroke="#AD4B27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          </div>
+
+          <div class="pj-group">
+            <div class="pj-frame-outer"><div class="pj-frame-inner"><img src="images/daria%20ph/9.jpg" alt="My Corner — 9" loading="lazy"></div><svg class="pj-pencil-frame" viewBox="0 0 250 376" fill="none" aria-hidden="true"><path d="M12,10 C60,4 180,6 240,10 C246,12 248,20 246,66 C244,145 244,240 246,342 C246,362 240,368 202,366 C156,364 78,366 13,364 C6,364 2,358 4,309 C6,221 6,88 12,10 Z" stroke="#AD4B27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="pj-frame-outer"><div class="pj-frame-inner"><img src="images/daria%20ph/10.jpg" alt="My Corner — 10" loading="lazy"></div><svg class="pj-pencil-frame" viewBox="0 0 250 376" fill="none" aria-hidden="true"><path d="M12,10 C60,4 180,6 240,10 C246,12 248,20 246,66 C244,145 244,240 246,342 C246,362 240,368 202,366 C156,364 78,366 13,364 C6,364 2,358 4,309 C6,221 6,88 12,10 Z" stroke="#AD4B27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="pj-frame-outer"><div class="pj-frame-inner"><img src="images/daria%20ph/11.jpg" alt="My Corner — 11" loading="lazy"></div><svg class="pj-pencil-frame" viewBox="0 0 250 376" fill="none" aria-hidden="true"><path d="M12,10 C60,4 180,6 240,10 C246,12 248,20 246,66 C244,145 244,240 246,342 C246,362 240,368 202,366 C156,364 78,366 13,364 C6,364 2,358 4,309 C6,221 6,88 12,10 Z" stroke="#AD4B27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          </div>
+
+          <div class="pj-group">
+            <div class="pj-frame-outer"><div class="pj-frame-inner"><img src="images/daria%20ph/12.jpg" alt="My Corner — 12" loading="lazy"></div><svg class="pj-pencil-frame" viewBox="0 0 250 376" fill="none" aria-hidden="true"><path d="M12,10 C60,4 180,6 240,10 C246,12 248,20 246,66 C244,145 244,240 246,342 C246,362 240,368 202,366 C156,364 78,366 13,364 C6,364 2,358 4,309 C6,221 6,88 12,10 Z" stroke="#AD4B27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="pj-frame-outer"><div class="pj-frame-inner"><img src="images/daria%20ph/13.jpg" alt="My Corner — 13" loading="lazy"></div><svg class="pj-pencil-frame" viewBox="0 0 250 376" fill="none" aria-hidden="true"><path d="M12,10 C60,4 180,6 240,10 C246,12 248,20 246,66 C244,145 244,240 246,342 C246,362 240,368 202,366 C156,364 78,366 13,364 C6,364 2,358 4,309 C6,221 6,88 12,10 Z" stroke="#AD4B27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="pj-frame-outer"><div class="pj-frame-inner"><img src="images/daria%20ph/14.jpg" alt="My Corner — 14" loading="lazy"></div><svg class="pj-pencil-frame" viewBox="0 0 250 376" fill="none" aria-hidden="true"><path d="M12,10 C60,4 180,6 240,10 C246,12 248,20 246,66 C244,145 244,240 246,342 C246,362 240,368 202,366 C156,364 78,366 13,364 C6,364 2,358 4,309 C6,221 6,88 12,10 Z" stroke="#AD4B27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          </div>
+
+          <div class="pj-group">
+            <div class="pj-frame-outer"><div class="pj-frame-inner"><img src="images/daria%20ph/15.jpg" alt="My Corner — 15" loading="lazy"></div><svg class="pj-pencil-frame" viewBox="0 0 250 376" fill="none" aria-hidden="true"><path d="M12,10 C60,4 180,6 240,10 C246,12 248,20 246,66 C244,145 244,240 246,342 C246,362 240,368 202,366 C156,364 78,366 13,364 C6,364 2,358 4,309 C6,221 6,88 12,10 Z" stroke="#AD4B27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="pj-frame-outer"><div class="pj-frame-inner"><img src="images/daria%20ph/16.jpg" alt="My Corner — 16" loading="lazy"></div><svg class="pj-pencil-frame" viewBox="0 0 250 376" fill="none" aria-hidden="true"><path d="M12,10 C60,4 180,6 240,10 C246,12 248,20 246,66 C244,145 244,240 246,342 C246,362 240,368 202,366 C156,364 78,366 13,364 C6,364 2,358 4,309 C6,221 6,88 12,10 Z" stroke="#AD4B27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="pj-frame-outer"><div class="pj-frame-inner"><img src="images/daria%20ph/17.jpg" alt="My Corner — 17" loading="lazy"></div><svg class="pj-pencil-frame" viewBox="0 0 250 376" fill="none" aria-hidden="true"><path d="M12,10 C60,4 180,6 240,10 C246,12 248,20 246,66 C244,145 244,240 246,342 C246,362 240,368 202,366 C156,364 78,366 13,364 C6,364 2,358 4,309 C6,221 6,88 12,10 Z" stroke="#AD4B27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          </div>
+
+          <div class="pj-group">
+            <div class="pj-frame-outer"><div class="pj-frame-inner"><img src="images/daria%20ph/18.jpg" alt="My Corner — 18" loading="lazy"></div><svg class="pj-pencil-frame" viewBox="0 0 250 376" fill="none" aria-hidden="true"><path d="M12,10 C60,4 180,6 240,10 C246,12 248,20 246,66 C244,145 244,240 246,342 C246,362 240,368 202,366 C156,364 78,366 13,364 C6,364 2,358 4,309 C6,221 6,88 12,10 Z" stroke="#AD4B27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="pj-frame-outer"><div class="pj-frame-inner"><img src="images/daria%20ph/19.jpg?v=2" alt="My Corner — 19" loading="lazy"></div><svg class="pj-pencil-frame" viewBox="0 0 250 376" fill="none" aria-hidden="true"><path d="M12,10 C60,4 180,6 240,10 C246,12 248,20 246,66 C244,145 244,240 246,342 C246,362 240,368 202,366 C156,364 78,366 13,364 C6,364 2,358 4,309 C6,221 6,88 12,10 Z" stroke="#AD4B27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="pj-frame-outer"><div class="pj-frame-inner"><img src="images/daria%20ph/20.jpg" alt="My Corner — 20" loading="lazy"></div><svg class="pj-pencil-frame" viewBox="0 0 250 376" fill="none" aria-hidden="true"><path d="M12,10 C60,4 180,6 240,10 C246,12 248,20 246,66 C244,145 244,240 246,342 C246,362 240,368 202,366 C156,364 78,366 13,364 C6,364 2,358 4,309 C6,221 6,88 12,10 Z" stroke="#AD4B27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          </div>
+
+        </div>
+      </div>
+      <button class="pj-nav pj-next" aria-label="Следующая группа">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9,6 15,12 9,18"/></svg>
+      </button>
+    </div>
+    <div class="pj-dots" id="pjDots" aria-hidden="true"></div>
+  </section>
+
+  <!-- ─── EDITORIAL / INTRO ────────────────────── -->
+  <section id="intro" class="section-intro">
+    <div class="container">
+      <div class="editorial-inner">
+        <span class="section-eyebrow fade-up" data-key="editorial.eyebrow"></span>
+        <div class="editorial-title-wrap">
+          <img src="images/Text/Rus.PNG" alt="Самые важные в жизни вещи — не вещи" class="editorial-title-img editorial-title-ru">
+          <img src="images/Text/Eng.PNG" alt="The most important things in life are not things" class="editorial-title-img editorial-title-en">
+        </div>
+        <div class="editorial-body fade-up">
+          <div data-key="editorial.body" class="editorial-text"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── WHAT'S INSIDE ─────────────────────────── -->
+  <section id="inside" class="section-inside">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label" data-key="inside.title"></span>
+        <div class="hand-underline" aria-hidden="true">
+          <svg viewBox="0 0 200 12" fill="none">
+            <path d="M2,8 Q50,2 100,7 Q150,12 198,5" stroke="#AD4B27" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+      <div class="inside-grid" id="insideGrid">
+        <!-- filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── MAGAZINE FEELING ──────────────────────── -->
+  <section id="magazine" class="section-magazine">
+    <div class="container">
+      <div class="magazine-inner fade-up">
+        <div class="magazine-cover">
+          <div class="magazine-cover-frame">
+            <div class="magazine-cover-img" id="magazineCoverImg">
+              <div class="cover-photo-wrap" id="coverPhotoWrap">
+                <!-- Photos injected by JS from images/Daria 2/ -->
+              </div>
+              <!-- top gradient so logo is readable -->
+              <div class="cover-gradient-top" aria-hidden="true"></div>
+              <img src="images/logo.png" alt="My Corner" class="cover-logo-overlay" aria-hidden="true">
+              <!-- season label at bottom of photo, changes with slide -->
+              <div class="cover-season-overlay" id="coverSeasonLabel" aria-hidden="true"></div>
+            </div>
+            <svg class="pencil-frame" viewBox="0 0 260 340" fill="none" aria-hidden="true">
+              <path d="M12,10 C60,4 180,6 248,10 C254,12 256,20 254,60
+                       C252,140 252,220 254,310 C254,328 248,334 210,332
+                       C160,330 80,332 14,330 C6,330 2,324 4,280
+                       C6,200 6,80 12,10 Z"
+                    stroke="#AD4B27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </div>
+        </div>
+        <div class="magazine-text">
+          <h2 data-key="magazine.title"></h2>
+          <p data-key="magazine.subtitle"></p>
+          <div class="magazine-stats">
+            <div class="stat">
+              <span class="stat-num">4</span>
+              <span class="stat-label" data-lang-ru="статьи в неделю" data-lang-en="articles a week"></span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num">24+</span>
+              <span class="stat-label" data-lang-ru="выпуска в архиве" data-lang-en="issues in archive"></span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num">∞</span>
+              <span class="stat-label" data-lang-ru="доступ навсегда" data-lang-en="access forever"></span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num">24/7</span>
+              <span class="stat-label" data-lang-ru="уютное комьюнити" data-lang-en="cozy community"></span>
+            </div>
+          </div>
+          <button class="btn btn-outline btn-sm magazine-details-btn" id="magazineDetailsBtn"
+                  data-lang-ru="Подробности" data-lang-en="Details"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT AUTHOR ────────────────────────── -->
+  <section id="about" class="section-about-author">
+    <div class="container">
+      <div class="about-author-inner fade-up">
+        <div class="typewriter-visual">
+          <img src="public/Images/TipeWriter.PNG" alt="Печатная машинка" class="typewriter-photo">
+        </div>
+        <div class="about-author-text">
+          <span class="section-eyebrow" data-lang-ru="об авторе" data-lang-en="about the author"></span>
+          <h2 data-lang-ru="Даша Жукова" data-lang-en="Dasha Zhukova"></h2>
+          <p data-lang-ru="Журналист, ex-автор Cosmopolitan Russia, PhD в области social philosophy, фаундер женского клуба «Что-то про шмотки» и сообщества «My Corner»." data-lang-en="Journalist, ex-contributor to Cosmopolitan Russia, PhD in social philosophy, founder of the women's club «Что-то про шмотки» and the community «My Corner»."></p>
+          <button class="btn btn-outline about-inline-trigger" data-lang-ru="Узнать больше об авторе" data-lang-en="Learn more about the author"></button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── CLUB ABOUT ────────────────────────────── -->
+  <section id="club-about" class="section-club">
+    <div class="container">
+      <div class="club-layout fade-up">
+        <div class="club-content">
+          <h2 class="club-about-title" data-key="clubAbout.title"></h2>
+          <ul class="club-list" id="clubList">
+            <!-- filled by JS -->
+          </ul>
+        </div>
+        <div class="club-image-slot" id="clubImageSlot">
+          <!-- изображение будет добавлено позже -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── HOW IT WORKS ──────────────────────────── -->
+  <section id="how" class="section-how">
+    <div class="container">
+      <div class="fade-up">
+        <h2 class="section-title-center" data-key="howItWorks.title"></h2>
+      </div>
+      <div class="steps-row" id="stepsRow">
+        <!-- filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PRICING ───────────────────────────────── -->
+  <section id="pricing" class="section-pricing">
+    <div class="container">
+      <div class="pricing-grid">
+
+        <!-- ── Карточка 1: Подписка (текущая) ─── -->
+        <div class="pricing-card pricing-card--featured fade-up">
+          <div class="pricing-badge" data-key="pricing.badge"></div>
+          <h2 class="pricing-title" data-key="pricing.title"></h2>
+          <div class="pricing-amount">
+            <span class="pricing-price" id="pricingPrice"></span>
+            <span class="pricing-period" id="pricingPeriod"></span>
+          </div>
+          <ul class="pricing-features" id="pricingFeatures">
+            <!-- filled by JS -->
+          </ul>
+          <a id="pricingBtn" href="#" class="btn btn-primary btn-lg" data-key="pricing.cta"></a>
+          <p class="pricing-note" data-key="pricing.note"></p>
+          <div class="pricing-doodle" aria-hidden="true"><img src="images/logo-mark.png" alt=""></div>
+        </div>
+
+        <!-- ── Карточка 3: Приложение (скоро) ─── -->
+        <div class="pricing-card pricing-card--inactive fade-up" aria-disabled="true">
+          <div class="pricing-badge pricing-badge--soon" data-lang-ru="Скоро" data-lang-en="Coming soon"></div>
+          <h2 class="pricing-title" data-lang-ru="Приложение для сообщества" data-lang-en="Community app"></h2>
+          <ul class="pricing-features">
+            <li class="pricing-feature" data-lang-ru="Всё, что в подписке My Corner" data-lang-en="Everything in the My Corner subscription"></li>
+            <li class="pricing-feature" data-lang-ru="Приложение для сообщества" data-lang-en="Community app"></li>
+            <li class="pricing-feature" data-lang-ru="Личный кабинет" data-lang-en="Personal account"></li>
+            <li class="pricing-feature" data-lang-ru="Уведомления о новых выпусках" data-lang-en="New issue notifications"></li>
+            <li class="pricing-feature" data-lang-ru="Эксклюзивные материалы" data-lang-en="Exclusive content"></li>
+          </ul>
+          <button class="btn btn-outline btn-lg" disabled data-lang-ru="Скоро" data-lang-en="Coming soon"></button>
+          <div class="pricing-doodle" aria-hidden="true"><img src="images/logo-mark.png" alt=""></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── DEMO ──────────────────────────────────── -->
+  <section id="demo" class="section-demo">
+    <div class="container">
+      <div class="demo-inner fade-up">
+        <div class="demo-text">
+          <span class="section-eyebrow" data-key="demo.eyebrow"></span>
+          <h2 data-key="demo.title"></h2>
+          <p data-key="demo.text"></p>
+          <a id="demoBtn" href="#" class="btn btn-outline btn-lg" data-key="demo.cta"></a>
+        </div>
+        <div class="demo-visual" aria-hidden="true">
+          <div class="demo-card">
+            <div class="demo-card-header">
+              <img src="images/logo-mark.png" alt="" width="28">
+              <span>My Corner — demo</span>
+            </div>
+            <div class="demo-card-lines">
+              <div class="demo-line"></div>
+              <div class="demo-line short"></div>
+              <div class="demo-line"></div>
+              <div class="demo-line shorter"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TESTIMONIALS ─────────────────────────── -->
+  <section id="reviews" class="section-reviews">
+    <div class="container">
+      <div class="reviews-header fade-up">
+        <h2 data-key="testimonials.title"></h2>
+        <p class="reviews-subtitle" data-key="testimonials.subtitle"></p>
+      </div>
+
+      <div class="reviews-stage">
+        <button class="carousel-arrow carousel-arrow--prev" id="revPrev" aria-label="Предыдущий">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+        <div class="reviews-carousel-wrap">
+          <div class="reviews-track" id="reviewsTrack">
+            <!-- filled by JS -->
+          </div>
+        </div>
+        <button class="carousel-arrow carousel-arrow--next" id="revNext" aria-label="Следующий">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+
+      <div class="reviews-dots" id="reviewsDots"></div>
+
+      <div class="reviews-more-wrap">
+        <button class="btn btn-ghost" id="showMoreReviews" data-key="testimonials.showMore"></button>
+        <div class="reviews-extra" id="reviewsExtra">
+          <!-- extra reviews by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FAQ ──────────────────────────────────── -->
+  <section id="faq" class="section-faq">
+    <div class="container">
+      <div class="fade-up">
+        <h2 class="section-title-center" data-key="faq.title"></h2>
+      </div>
+      <div class="faq-list" id="faqList">
+        <!-- filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────── -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="My Corner" class="footer-logo">
+        <p class="footer-desc" data-key="footer.desc"></p>
+        <div class="footer-socials">
+          <a id="footerInstagram" href="#" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="5"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a id="footerTelegram" href="#" class="social-link" aria-label="Telegram">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-2.01 9.47c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.873.75z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+<div class="footer-info">
+        <div class="footer-subscribe">
+          <p class="footer-price-text">
+            <strong id="footerPrice"></strong>
+            <span id="footerPeriod"></span>
+          </p>
+          <a id="footerBuyBtn" href="#" class="btn btn-primary btn-sm" data-key="nav.buy"></a>
+        </div>
+        <div class="footer-lang">
+          <button class="lang-btn" id="langBtnFooter">
+            <span class="lang-ru active">RU</span>
+            <span class="lang-divider">/</span>
+            <span class="lang-en">EN</span>
+          </button>
+        </div>
+        <div class="footer-legal">
+          <button class="footer-link" id="openPrivacyPopup" data-key="footer.privacy"></button>
+          <button class="footer-link" id="openTermsPopup" data-key="footer.terms"></button>
+          <button class="footer-link" id="openCookieSettings" data-key="footer.cookies"></button>
+          <p class="footer-copy" data-key="footer.copy"></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ─── AUTHOR MODAL ───────────────────────── -->
+  <div class="author-modal-overlay" id="authorModal" role="dialog" aria-modal="true">
+    <div class="author-modal">
+      <button class="author-modal-close" id="authorModalClose" aria-label="Закрыть">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <div class="author-modal-inner">
+        <div class="author-modal-photo">
+          <div class="founder-photo-placeholder">
+            <img src="images/1-50.JPG" alt="Даша Жукова" class="founder-avatar-art">
+          </div>
+          <svg class="pencil-frame pencil-frame--founder" viewBox="0 0 260 300" fill="none" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M14,14 C60,6 190,8 246,12 C252,14 254,22 252,65
+                     C250,145 250,210 252,286 C252,296 246,300 210,298
+                     C165,296 80,298 16,296 C8,296 4,290 6,252
+                     C8,172 8,60 14,14 Z"
+                  stroke="#AD4B27" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </div>
+        <div class="author-modal-text">
+          <span class="section-eyebrow author-modal-eyebrow" data-key="founder.title"></span>
+          <h2 class="founder-name author-modal-name" data-key="founder.name"></h2>
+          <a class="founder-handle author-modal-handle" id="founderHandle" href="#" data-key="founder.handle"></a>
+          <p class="founder-bio author-modal-bio" data-key="founder.bio"></p>
+          <a id="founderInstagram" href="#" class="btn btn-outline author-modal-cta" data-key="founder.cta"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── PRIVACY POPUP ──────────────────────── -->
+  <div class="legal-popup-overlay" id="privacyPopup" role="dialog" aria-modal="true">
+    <div class="legal-popup">
+      <button class="legal-popup-close" id="privacyPopupClose" aria-label="Закрыть">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+
+      <div id="privacyRu">
+        <h3>Политика конфиденциальности</h3>
+        <p class="legal-updated">Последнее обновление: 16 мая 2026</p>
+        <p>Настоящая Политика конфиденциальности описывает обработку персональных данных пользователей сайта проекта <strong>My Corner</strong>. Документ составлен в соответствии с Регламентом ЕС 2016/679 (GDPR), Законодательным декретом Италии 196/2003 с последующими изменениями и руководствами Гаранта по защите персональных данных (Garante per la Protezione dei Dati Personali).</p>
+
+        <h4>1. Контролер данных</h4>
+        <p><strong>Имя:</strong> Владимир Шаповалов<br>
+        <strong>P. IVA:</strong> 12490380966<br>
+        <strong>Адрес:</strong> Милан, Италия<br>
+        <strong>Email:</strong> omazaiko@gmail.com</p>
+
+        <h4>2. Какие данные мы обрабатываем</h4>
+        <p>Сайт является информационным лендингом и не собирает персональные данные напрямую. При посещении Сайта автоматически могут обрабатываться следующие технические данные:</p>
+        <ul>
+          <li>IP-адрес;</li>
+          <li>тип устройства, браузера, операционная система;</li>
+          <li>дата и время посещения, просмотренные страницы, реферер;</li>
+          <li>технические cookies, необходимые для работы Сайта.</li>
+        </ul>
+
+        <h4>3. Правовое основание обработки</h4>
+        <p>Обработка данных осуществляется на основании <strong>законного интереса</strong> контролера (ст. 6.1.f GDPR) — обеспечение работоспособности и безопасности Сайта.</p>
+
+        <h4>4. Срок хранения</h4>
+        <p>Технические серверные логи хранятся не более 30 дней, после чего удаляются автоматически. Данные, которые мы обязаны хранить по закону, хранятся в течение установленных законом сроков.</p>
+
+        <h4>5. Получатели данных</h4>
+        <p>Технические данные могут передаваться хостинг-провайдеру Сайта и государственным органам — в случаях, предусмотренных законом. Мы не продаём ваши данные и не передаём их третьим лицам в маркетинговых целях.</p>
+
+        <h4>6. Внешние ссылки</h4>
+        <p>Сайт содержит ссылки на внешние ресурсы (социальные сети, GetCourse, Telegram). При переходе вы попадаете на сторонние ресурсы, политики конфиденциальности которых регулируют дальнейшую обработку ваших данных.</p>
+
+        <h4>7. Ваши права</h4>
+        <p>В соответствии со ст. 15–22 GDPR вы имеете право:</p>
+        <ul>
+          <li>получить доступ к своим персональным данным;</li>
+          <li>требовать их исправления или удаления;</li>
+          <li>ограничивать обработку;</li>
+          <li>получить данные в переносимом формате;</li>
+          <li>возражать против обработки;</li>
+          <li>подать жалобу в Garante per la Protezione dei Dati Personali (www.garanteprivacy.it).</li>
+        </ul>
+
+        <h4>8. Cookies</h4>
+        <p>Сайт использует только технические cookies, необходимые для его работы.</p>
+
+        <h4>9. Несовершеннолетние</h4>
+        <p>Сайт не предназначен для лиц младше 16 лет.</p>
+
+        <h4>10. Контакты</h4>
+        <p>По вопросам обработки персональных данных пишите на: omazaiko@gmail.com. Мы ответим в течение 30 дней.</p>
+      </div>
+
+      <div id="privacyEn" style="display:none">
+        <h3>Privacy Policy</h3>
+        <p class="legal-updated">Last updated: May 16, 2026</p>
+        <p>This Privacy Policy describes the processing of personal data of users of the <strong>My Corner</strong> project website. This document complies with EU Regulation 2016/679 (GDPR), Italian Legislative Decree 196/2003 as amended, and the guidelines of the Italian Data Protection Authority (Garante per la Protezione dei Dati Personali).</p>
+
+        <h4>1. Data Controller</h4>
+        <p><strong>Name:</strong> Vladimir Shapovalov<br>
+        <strong>VAT (P. IVA):</strong> 12490380966<br>
+        <strong>Address:</strong> Milan, Italy<br>
+        <strong>Email:</strong> omazaiko@gmail.com</p>
+
+        <h4>2. What data we process</h4>
+        <p>The Website is an informational landing page and does not collect personal data directly. When you visit the Website, the following technical data may be processed automatically:</p>
+        <ul>
+          <li>IP address;</li>
+          <li>device type, browser type, operating system;</li>
+          <li>date and time of visit, pages viewed, referrer;</li>
+          <li>technical cookies necessary for the operation of the Website.</li>
+        </ul>
+
+        <h4>3. Legal basis</h4>
+        <p>The data is processed on the basis of the <strong>legitimate interest</strong> of the controller (Article 6.1.f GDPR) — ensuring the functioning and security of the Website.</p>
+
+        <h4>4. Retention period</h4>
+        <p>Technical server logs are retained for no more than 30 days, after which they are deleted automatically. Data we are legally required to retain is kept for the period required by law.</p>
+
+        <h4>5. Recipients of the data</h4>
+        <p>Technical data may be transferred to the Website's hosting provider and public authorities — in cases provided for by law. We do not sell your data and do not pass it to third parties for marketing purposes.</p>
+
+        <h4>6. External links</h4>
+        <p>The Website contains links to external resources (social networks, GetCourse, Telegram). When you follow such links, you access third-party resources whose privacy policies govern any further processing of your data.</p>
+
+        <h4>7. Your rights</h4>
+        <p>Under Articles 15–22 GDPR you have the right to:</p>
+        <ul>
+          <li>access your personal data;</li>
+          <li>request its rectification or erasure;</li>
+          <li>restrict processing;</li>
+          <li>receive your data in a portable format;</li>
+          <li>object to processing;</li>
+          <li>lodge a complaint with the Garante per la Protezione dei Dati Personali (www.garanteprivacy.it).</li>
+        </ul>
+
+        <h4>8. Cookies</h4>
+        <p>The Website uses only technical cookies necessary for its operation.</p>
+
+        <h4>9. Minors</h4>
+        <p>The Website is not intended for persons under the age of 16.</p>
+
+        <h4>10. Contact</h4>
+        <p>For any questions regarding the processing of personal data, please write to: omazaiko@gmail.com. We will respond within 30 days.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ─── TERMS POPUP ───────────────────────── -->
+  <div class="legal-popup-overlay" id="termsPopup" role="dialog" aria-modal="true">
+    <div class="legal-popup">
+      <button class="legal-popup-close" id="termsPopupClose" aria-label="Закрыть">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+
+      <div id="termsRu">
+        <h3>Условия использования</h3>
+        <p class="legal-updated">Последнее обновление: 16 мая 2026</p>
+        <p>Настоящие Условия использования регулируют доступ и использование сайта проекта <strong>My Corner</strong>. Используя Сайт, вы подтверждаете, что прочитали, поняли и согласны с настоящими Условиями.</p>
+
+        <h4>1. Владелец Сайта</h4>
+        <p><strong>Имя:</strong> Владимир Шаповалов<br>
+        <strong>P. IVA:</strong> 12490380966<br>
+        <strong>Адрес:</strong> Милан, Италия<br>
+        <strong>Email:</strong> omazaiko@gmail.com</p>
+
+        <h4>2. Предмет</h4>
+        <p>Сайт является информационной площадкой проекта <strong>My Corner</strong> — медиапроекта, объединяющего журнал, чат, профили пользователей и образовательный контент. Сайт содержит описание проекта и ссылки на платформы, где можно получить доступ к продукту.</p>
+        <p>Сам Сайт <strong>не предоставляет платных услуг и не осуществляет продаж</strong>. Все транзакции совершаются через сторонние платформы и регулируются их собственными условиями.</p>
+
+        <h4>3. Принятие Условий</h4>
+        <p>Используя Сайт, вы соглашаетесь соблюдать настоящие Условия. Если вы не согласны — пожалуйста, не используйте Сайт.</p>
+
+        <h4>4. Интеллектуальная собственность</h4>
+        <p>Всё содержимое Сайта — название и логотип My Corner, фотографии, тексты, графика, дизайн, шрифты — является интеллектуальной собственностью владельца и охраняется применимым законодательством.</p>
+        <p><strong>Без письменного согласия владельца запрещается:</strong></p>
+        <ul>
+          <li>копировать, воспроизводить, публиковать или распространять материалы Сайта;</li>
+          <li>использовать их в коммерческих целях;</li>
+          <li>использовать для обучения моделей машинного обучения и ИИ (text and data mining);</li>
+          <li>удалять или изменять обозначения авторства.</li>
+        </ul>
+        <p>Для получения разрешения пишите на omazaiko@gmail.com.</p>
+
+        <h4>5. Использование Сайта</h4>
+        <p>Пользователь обязуется использовать Сайт добросовестно, не предпринимать действий, нарушающих его работу, и не распространять вредоносный или незаконный контент.</p>
+
+        <h4>6. Внешние ссылки</h4>
+        <p>Сайт содержит ссылки на сторонние платформы (Telegram, GetCourse, социальные сети). Использование этих платформ регулируется их собственными правилами. Владелец Сайта не несёт ответственности за содержание и политику сторонних ресурсов.</p>
+
+        <h4>7. Ограничение ответственности</h4>
+        <p>В пределах, допускаемых законодательством, владелец Сайта не несёт ответственности за прямой или косвенный ущерб от использования Сайта, сбои в его работе и действия третьих лиц. Информация предоставляется «как есть». Настоящий раздел не ограничивает права потребителей по итальянскому Codice del Consumo (Законодательный декрет 206/2005).</p>
+
+        <h4>8. Персональные данные</h4>
+        <p>Обработка данных осуществляется в соответствии с Политикой конфиденциальности.</p>
+
+        <h4>9. Изменения</h4>
+        <p>Владелец вправе в любой момент изменить настоящие Условия. Актуальная редакция всегда доступна на этой странице.</p>
+
+        <h4>10. Применимое право</h4>
+        <p>Условия регулируются законодательством Италии. Споры подлежат разрешению в суде Милана (Tribunale di Milano). Для потребителей из ЕС также доступна платформа ЕС для онлайн-разрешения споров: ec.europa.eu/consumers/odr.</p>
+
+        <h4>11. Контакты</h4>
+        <p>По вопросам: omazaiko@gmail.com</p>
+      </div>
+
+      <div id="termsEn" style="display:none">
+        <h3>Terms of Use</h3>
+        <p class="legal-updated">Last updated: May 16, 2026</p>
+        <p>These Terms of Use govern access to and use of the <strong>My Corner</strong> project website. By using the Website, you acknowledge that you have read, understood and agreed to these Terms.</p>
+
+        <h4>1. Website owner</h4>
+        <p><strong>Name:</strong> Vladimir Shapovalov<br>
+        <strong>VAT (P. IVA):</strong> 12490380966<br>
+        <strong>Address:</strong> Milan, Italy<br>
+        <strong>Email:</strong> omazaiko@gmail.com</p>
+
+        <h4>2. Subject matter</h4>
+        <p>The Website is the informational landing page of the <strong>My Corner</strong> project — a media project combining a journal, chat, user profiles and educational content.</p>
+        <p>The Website itself <strong>does not provide paid services and does not carry out sales</strong>. All transactions are carried out through third-party platforms and governed by their own terms.</p>
+
+        <h4>3. Acceptance</h4>
+        <p>By using the Website, you agree to comply with these Terms. If you do not agree, please do not use the Website.</p>
+
+        <h4>4. Intellectual property</h4>
+        <p>All content on the Website — including the My Corner name and logo, photographs, texts, graphics, design, and fonts — is the intellectual property of the owner and is protected by applicable law.</p>
+        <p><strong>Without the owner's prior written consent, you may not:</strong></p>
+        <ul>
+          <li>copy, reproduce, publish or distribute Website content;</li>
+          <li>use it for commercial purposes;</li>
+          <li>use the content for training machine learning or AI models (text and data mining);</li>
+          <li>remove or alter authorship notices.</li>
+        </ul>
+        <p>To request permission, contact omazaiko@gmail.com.</p>
+
+        <h4>5. User obligations</h4>
+        <p>The user agrees to use the Website in good faith, not engage in conduct that may disrupt the Website, and not use it to distribute malware or unlawful content.</p>
+
+        <h4>6. External links</h4>
+        <p>The Website contains links to third-party platforms (Telegram, GetCourse, social networks). Use of these platforms is governed by their own rules. The Website owner is not responsible for the content or policies of third-party platforms.</p>
+
+        <h4>7. Limitation of liability</h4>
+        <p>To the extent permitted by law, the Website owner shall not be liable for any damages arising from use of the Website, malfunctions, or actions of third parties. Information is provided "as is". This section does not restrict consumer rights under the Italian Consumer Code (Legislative Decree 206/2005).</p>
+
+        <h4>8. Personal data</h4>
+        <p>The processing of personal data is governed by the Privacy Policy.</p>
+
+        <h4>9. Changes</h4>
+        <p>The owner may amend these Terms at any time. The current version is always available on this page.</p>
+
+        <h4>10. Governing law</h4>
+        <p>These Terms are governed by Italian law. Disputes shall be submitted to the court of Milan (Tribunale di Milano). EU consumers may also use the European Commission's online dispute resolution platform: ec.europa.eu/consumers/odr.</p>
+
+        <h4>11. Contact</h4>
+        <p>For any questions: omazaiko@gmail.com</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ─── MAGAZINE POPUP ──────────────────────── -->
+  <div class="magazine-popup-overlay" id="magazinePopup" role="dialog" aria-modal="true" aria-label="Подробности о журнале">
+    <div class="magazine-popup">
+      <button class="magazine-popup-close" id="magazinePopupClose" aria-label="Закрыть">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <div class="popup-section">
+        <h4 class="popup-section-title" data-lang-ru="4 публикации в неделю" data-lang-en="4 articles a week"></h4>
+        <p data-lang-ru="В журнале выходят статьи, подборки, личные колонки, разборы, рекомендации, истории, списки, советы, beauty и fashion-находки, авторские съёмки от профессионального фотографа, личные тексты и прямые эфиры." data-lang-en="The magazine features articles, curated picks, personal columns, reviews, recommendations, stories, lists, tips, beauty and fashion finds, original shoots by a professional photographer, personal essays and live sessions."></p>
+      </div>
+      <hr class="popup-divider">
+      <div class="popup-section">
+        <h4 class="popup-section-title" data-lang-ru="24+ выпусков в архиве" data-lang-en="24+ issues in the archive"></h4>
+        <p data-lang-ru="В архиве вас ждут выпуски журнала за последние 4 года. Доступ к архивным выпускам приобретается отдельно." data-lang-en="The archive holds magazine issues from the past 4 years. Access to archive issues is purchased separately."></p>
+      </div>
+      <hr class="popup-divider">
+      <div class="popup-section">
+        <h4 class="popup-section-title" data-lang-ru="∞ Доступ навсегда" data-lang-en="∞ Access forever"></h4>
+        <p data-lang-ru="Все приобретённые материалы остаются у вас навсегда — без ограничений по времени." data-lang-en="All purchased content stays with you forever — no time limits."></p>
+      </div>
+      <hr class="popup-divider">
+      <div class="popup-section">
+        <h4 class="popup-section-title" data-lang-ru="24/7 тёплое комьюнити" data-lang-en="24/7 warm community"></h4>
+        <p data-lang-ru="Отдельное пространство для общения, поддержки и знакомств с людьми, близкими вам по духу." data-lang-en="A dedicated space for connection, support and meeting people who share your values."></p>
+      </div>
+      <hr class="popup-divider">
+      <div class="popup-section">
+        <h4 class="popup-section-title" data-lang-ru="Редактор всегда рядом" data-lang-en="The editor is always near"></h4>
+        <p data-lang-ru="Редактор журнала общается с читателями в чате, обсуждает темы выпусков и поддерживает уютную атмосферу клуба." data-lang-en="The magazine editor talks with readers in the chat, discusses issue topics and keeps the warm atmosphere of the club."></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── COOKIE INFO MODAL ────────────────────── -->
+  <div id="cookieInfoModal" class="cookie-overlay" role="dialog" aria-modal="true" aria-label="Cookie info" style="display:none">
+    <div class="cookie-modal">
+      <button class="cookie-modal-close" id="cookieInfoClose" aria-label="Закрыть">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <div class="cookie-modal-icon" aria-hidden="true">🍪</div>
+      <h3 class="cookie-modal-title">Cookies</h3>
+      <p class="cookie-modal-text" id="cookieInfoText"></p>
+    </div>
+  </div>
+
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

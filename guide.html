@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Effortless Chic — Гайд по стилю · My Corner</title>
+  <meta name="description" content="Гайд по стилю от My Corner — из моего шкафа выпадает только красивое.">
+  <link rel="icon" type="image/png" href="images/logo-mark.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="src/styles/fonts.css">
+
+  <style>
+    :root {
+      --paper: #F2E0CD;
+      --paper-soft: #E0CCB6;
+      --paper-deep: #CCB69E;
+      --terracotta: #AD4B27;
+      --muted-ink: #685E53;
+      --ink-brown: #46382D;
+      --ink: #1D1813;
+      --font-display: "MyCorner", "Cormorant Garamond", Georgia, serif;
+      --font-body: "Cormorant Garamond", Georgia, serif;
+    }
+    @font-face {
+      font-family: "MyCorner";
+      src: url("public/fonts/mycorner/mycorner.woff2") format("woff2"),
+           url("public/fonts/mycorner/mycorner.woff") format("woff");
+      font-weight: 400;
+      font-display: swap;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-body);
+      font-size: 18px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: var(--terracotta); }
+
+    .guide-wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 80px 24px 120px;
+    }
+
+    /* ── Back link ── */
+    .guide-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+      color: var(--muted-ink);
+      text-decoration: none;
+      margin-bottom: 64px;
+      letter-spacing: 0.03em;
+      transition: color 0.2s;
+    }
+    .guide-back:hover { color: var(--terracotta); }
+
+    /* ── Cover ── */
+    .guide-cover {
+      margin-bottom: 64px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid var(--paper-deep);
+    }
+    .guide-cover-eyebrow {
+      display: block;
+      font-family: var(--font-body);
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      color: var(--terracotta);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .guide-cover-title {
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 8vw, 5.5rem);
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.05;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+    .guide-cover-quote {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      font-style: italic;
+      color: var(--terracotta);
+      line-height: 1.5;
+    }
+
+    /* ── Placeholder content ── */
+    .guide-coming {
+      text-align: center;
+      padding: 80px 0;
+    }
+    .guide-coming-mark {
+      width: 56px;
+      margin: 0 auto 24px;
+      opacity: 0.5;
+    }
+    .guide-coming h2 {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      font-weight: 400;
+      font-style: italic;
+      color: var(--muted-ink);
+      margin-bottom: 12px;
+    }
+    .guide-coming p {
+      color: var(--muted-ink);
+      font-size: 1rem;
+      margin-bottom: 36px;
+    }
+    .btn-back {
+      display: inline-flex;
+      align-items: center;
+      padding: 13px 32px;
+      border-radius: 50px;
+      border: 2px solid var(--terracotta);
+      color: var(--terracotta);
+      font-family: var(--font-body);
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.25s;
+    }
+    .btn-back:hover {
+      background: var(--terracotta);
+      color: #fff;
+    }
+
+    /* ── Footer line ── */
+    .guide-footer {
+      margin-top: 80px;
+      padding-top: 32px;
+      border-top: 1px solid var(--paper-deep);
+      text-align: center;
+    }
+    .guide-footer img { margin: 0 auto; }
+    .guide-footer-note {
+      margin-top: 12px;
+      font-size: 0.85rem;
+      color: var(--muted-ink);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="guide-wrap">
+
+    <a href="index.html" class="guide-back">
+      ← My Corner
+    </a>
+
+    <div class="guide-cover">
+      <span class="guide-cover-eyebrow">Гайд по стилю · My Corner</span>
+      <h1 class="guide-cover-title">Effortless Chic</h1>
+      <p class="guide-cover-quote">«из моего шкафа выпадает только красивое»</p>
+    </div>
+
+    <!-- ══════════════════════════════════
+         ЗДЕСЬ БУДЕТ КОНТЕНТ ГАЙДА
+         Вставьте разделы гайда ниже.
+         Каждый раздел — отдельный <article> или <section>.
+         ══════════════════════════════════ -->
+
+    <div class="guide-coming">
+      <img src="images/logo-mark.png" alt="" class="guide-coming-mark">
+      <h2>Гайд готовится</h2>
+      <p>Совсем скоро здесь появится полный гайд по стилю.</p>
+      <a href="index.html" class="btn-back">Вернуться на сайт</a>
+    </div>
+
+    <!-- ══════════════════════════════════
+         КОНЕЦ КОНТЕНТА ГАЙДА
+         ══════════════════════════════════ -->
+
+    <footer class="guide-footer">
+      <img src="images/logo.png" alt="My Corner" height="28">
+      <p class="guide-footer-note">© My Corner · by Dasha Zhukova</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>

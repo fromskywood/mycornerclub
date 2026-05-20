@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1320" viewBox="0 0 1800 1320" style="overflow: visible;">
+  <title>My Corner uppercase alphabet library - thin safe rendering</title>
+  <desc>Uppercase A-Z vector alphabet inspired by the hand-drawn My Corner logo. Restored to the first, looser style for per-letter refinement.</desc>
+  <defs>
+    <style>
+      .paper { fill: #fffdf9; }
+      svg, symbol, use, g { overflow: visible; }
+      .ink {
+        fill: none;
+        stroke: #080808;
+        stroke-width: 9;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        filter: url(#handWobble);
+      }
+      .label {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        letter-spacing: 0;
+        fill: #777;
+      }
+      .guide {
+        stroke: #ece7df;
+        stroke-width: 2;
+      }
+    </style>
+    <filter id="handWobble" x="-60%" y="-60%" width="220%" height="220%" filterUnits="objectBoundingBox">
+      <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="7" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.25"/>
+    </filter>
+
+    <symbol id="glyph-A" viewBox="0 0 120 160">
+      <path class="ink" d="M22 136 L59 22 L99 136"/>
+      <path class="ink" d="M37 94 C51 91 70 91 85 94"/>
+    </symbol>
+    <symbol id="glyph-B" viewBox="0 0 120 160">
+      <path class="ink" d="M28 25 L28 137"/>
+      <path class="ink" d="M29 27 C77 19 99 33 95 58 C92 78 70 83 31 82"/>
+      <path class="ink" d="M31 82 C78 78 103 91 99 116 C95 140 67 143 29 136"/>
+    </symbol>
+    <symbol id="glyph-C" viewBox="0 0 120 160">
+      <path class="ink" d="M94 39 C79 22 47 21 29 43 C9 68 12 109 34 128 C53 144 79 139 96 122"/>
+    </symbol>
+    <symbol id="glyph-D" viewBox="0 0 120 160">
+      <path class="ink" d="M27 25 L27 137"/>
+      <path class="ink" d="M29 26 C75 19 103 46 101 82 C99 120 72 143 28 136"/>
+    </symbol>
+    <symbol id="glyph-E" viewBox="0 0 120 160">
+      <path class="ink" d="M32 27 L30 136"/>
+      <path class="ink" d="M34 29 C55 28 76 28 96 29"/>
+      <path class="ink" d="M32 82 C51 80 68 80 87 82"/>
+      <path class="ink" d="M31 135 C54 136 77 136 99 134"/>
+    </symbol>
+    <symbol id="glyph-F" viewBox="0 0 120 160">
+      <path class="ink" d="M32 28 L30 137"/>
+      <path class="ink" d="M34 29 C55 28 77 28 99 29"/>
+      <path class="ink" d="M32 82 C50 80 70 80 88 82"/>
+    </symbol>
+    <symbol id="glyph-G" viewBox="0 0 120 160">
+      <path class="ink" d="M95 39 C79 22 47 21 29 43 C9 68 12 110 35 128 C56 146 86 138 98 116"/>
+      <path class="ink" d="M69 91 C80 91 91 91 101 92"/>
+      <path class="ink" d="M100 92 L100 118"/>
+    </symbol>
+    <symbol id="glyph-H" viewBox="0 0 120 160">
+      <path class="ink" d="M27 27 L27 137"/>
+      <path class="ink" d="M94 27 L92 137"/>
+      <path class="ink" d="M30 82 C50 79 70 80 91 82"/>
+    </symbol>
+    <symbol id="glyph-I" viewBox="0 0 120 160">
+      <path class="ink" d="M38 29 C52 28 69 28 83 30"/>
+      <path class="ink" d="M61 31 L60 135"/>
+      <path class="ink" d="M37 135 C52 137 69 137 85 135"/>
+    </symbol>
+    <symbol id="glyph-J" viewBox="0 0 120 160">
+      <path class="ink" d="M42 30 C59 28 77 28 94 30"/>
+      <path class="ink" d="M78 31 L77 106 C77 132 56 143 36 133 C25 127 21 116 23 106"/>
+    </symbol>
+    <symbol id="glyph-K" viewBox="0 0 120 160">
+      <path class="ink" d="M30 28 L29 137"/>
+      <path class="ink" d="M94 30 C77 50 58 68 31 84"/>
+      <path class="ink" d="M52 78 C68 98 84 116 100 136"/>
+    </symbol>
+    <symbol id="glyph-L" viewBox="0 0 120 160">
+      <path class="ink" d="M33 28 L32 135"/>
+      <path class="ink" d="M33 135 C54 137 76 137 98 134"/>
+    </symbol>
+    <symbol id="glyph-M" viewBox="0 0 120 160">
+      <path class="ink" d="M19 136 L22 27 L60 83 L98 27 L102 136"/>
+    </symbol>
+    <symbol id="glyph-N" viewBox="0 0 120 160">
+      <path class="ink" d="M26 136 L27 28 L96 136 L96 28"/>
+    </symbol>
+    <symbol id="glyph-O" viewBox="0 0 120 160">
+      <path class="ink" d="M61 24 C89 24 104 50 102 82 C100 117 83 139 58 138 C31 137 17 112 19 80 C21 47 36 24 61 24"/>
+    </symbol>
+    <symbol id="glyph-P" viewBox="0 0 120 160">
+      <path class="ink" d="M30 136 L30 27"/>
+      <path class="ink" d="M32 29 C76 21 99 38 96 65 C93 92 65 99 31 91"/>
+    </symbol>
+    <symbol id="glyph-Q" viewBox="0 0 120 160">
+      <path class="ink" d="M60 24 C88 24 104 50 102 82 C100 116 82 138 58 137 C31 136 17 112 19 80 C21 47 36 24 60 24"/>
+      <path class="ink" d="M73 109 L101 139"/>
+    </symbol>
+    <symbol id="glyph-R" viewBox="0 0 120 160">
+      <path class="ink" d="M30 136 L30 27"/>
+      <path class="ink" d="M32 29 C76 21 99 38 96 65 C93 92 65 99 31 91"/>
+      <path class="ink" d="M55 91 L101 136"/>
+    </symbol>
+    <symbol id="glyph-S" viewBox="0 0 120 160">
+      <path class="ink" d="M94 37 C76 22 43 24 30 44 C18 62 31 78 61 84 C92 90 103 108 89 126 C74 145 39 140 22 123"/>
+    </symbol>
+    <symbol id="glyph-T" viewBox="0 0 120 160">
+      <path class="ink" d="M20 30 C47 27 74 27 101 30"/>
+      <path class="ink" d="M61 31 L60 136"/>
+    </symbol>
+    <symbol id="glyph-U" viewBox="0 0 120 160">
+      <path class="ink" d="M25 27 L25 101 C25 127 41 139 61 139 C84 139 96 123 96 101 L96 28"/>
+    </symbol>
+    <symbol id="glyph-V" viewBox="0 0 120 160">
+      <path class="ink" d="M20 27 L60 137 L101 27"/>
+    </symbol>
+    <symbol id="glyph-W" viewBox="0 0 120 160">
+      <path class="ink" d="M13 28 L33 136 L60 75 L88 136 L106 28"/>
+    </symbol>
+    <symbol id="glyph-X" viewBox="0 0 120 160">
+      <path class="ink" d="M24 30 L97 136"/>
+      <path class="ink" d="M98 29 L23 136"/>
+    </symbol>
+    <symbol id="glyph-Y" viewBox="0 0 120 160">
+      <path class="ink" d="M22 28 L61 82 L100 28"/>
+      <path class="ink" d="M61 82 L60 136"/>
+    </symbol>
+    <symbol id="glyph-Z" viewBox="0 0 120 160">
+      <path class="ink" d="M23 30 C46 28 72 28 98 30"/>
+      <path class="ink" d="M98 30 L23 136"/>
+      <path class="ink" d="M24 136 C50 138 76 138 100 135"/>
+    </symbol>
+  </defs>
+
+  <rect class="paper" width="1800" height="1320"/>
+  <text x="90" y="76" class="label">MY CORNER uppercase font library - thin safe rendering version - full A-Z</text>
+
+  <g transform="translate(70 115)">
+    <path class="guide" d="M0 130 H1660"/>
+    <path class="guide" d="M0 310 H1660"/>
+    <path class="guide" d="M0 490 H1660"/>
+    <path class="guide" d="M0 670 H1660"/>
+    <path class="guide" d="M0 850 H1660"/>
+
+    <g transform="translate(0 0)"><use href="#glyph-A" width="120" height="160"/><text class="label" x="50" y="174">A</text></g>
+    <g transform="translate(190 0)"><use href="#glyph-B" width="120" height="160"/><text class="label" x="50" y="174">B</text></g>
+    <g transform="translate(380 0)"><use href="#glyph-C" width="120" height="160"/><text class="label" x="50" y="174">C</text></g>
+    <g transform="translate(570 0)"><use href="#glyph-D" width="120" height="160"/><text class="label" x="50" y="174">D</text></g>
+    <g transform="translate(760 0)"><use href="#glyph-E" width="120" height="160"/><text class="label" x="50" y="174">E</text></g>
+    <g transform="translate(950 0)"><use href="#glyph-F" width="120" height="160"/><text class="label" x="50" y="174">F</text></g>
+    <g transform="translate(1140 0)"><use href="#glyph-G" width="120" height="160"/><text class="label" x="50" y="174">G</text></g>
+
+    <g transform="translate(0 205)"><use href="#glyph-H" width="120" height="160"/><text class="label" x="50" y="174">H</text></g>
+    <g transform="translate(190 205)"><use href="#glyph-I" width="120" height="160"/><text class="label" x="50" y="174">I</text></g>
+    <g transform="translate(380 205)"><use href="#glyph-J" width="120" height="160"/><text class="label" x="50" y="174">J</text></g>
+    <g transform="translate(570 205)"><use href="#glyph-K" width="120" height="160"/><text class="label" x="50" y="174">K</text></g>
+    <g transform="translate(760 205)"><use href="#glyph-L" width="120" height="160"/><text class="label" x="50" y="174">L</text></g>
+    <g transform="translate(950 205)"><use href="#glyph-M" width="120" height="160"/><text class="label" x="50" y="174">M</text></g>
+    <g transform="translate(1140 205)"><use href="#glyph-N" width="120" height="160"/><text class="label" x="50" y="174">N</text></g>
+
+    <g transform="translate(0 410)"><use href="#glyph-O" width="120" height="160"/><text class="label" x="50" y="174">O</text></g>
+    <g transform="translate(190 410)"><use href="#glyph-P" width="120" height="160"/><text class="label" x="50" y="174">P</text></g>
+    <g transform="translate(380 410)"><use href="#glyph-Q" width="120" height="160"/><text class="label" x="50" y="174">Q</text></g>
+    <g transform="translate(570 410)"><use href="#glyph-R" width="120" height="160"/><text class="label" x="50" y="174">R</text></g>
+    <g transform="translate(760 410)"><use href="#glyph-S" width="120" height="160"/><text class="label" x="50" y="174">S</text></g>
+    <g transform="translate(950 410)"><use href="#glyph-T" width="120" height="160"/><text class="label" x="50" y="174">T</text></g>
+    <g transform="translate(1140 410)"><use href="#glyph-U" width="120" height="160"/><text class="label" x="50" y="174">U</text></g>
+
+    <g transform="translate(0 615)"><use href="#glyph-V" width="120" height="160"/><text class="label" x="50" y="174">V</text></g>
+    <g transform="translate(190 615)"><use href="#glyph-W" width="120" height="160"/><text class="label" x="50" y="174">W</text></g>
+    <g transform="translate(380 615)"><use href="#glyph-X" width="120" height="160"/><text class="label" x="50" y="174">X</text></g>
+    <g transform="translate(570 615)"><use href="#glyph-Y" width="120" height="160"/><text class="label" x="50" y="174">Y</text></g>
+    <g transform="translate(760 615)"><use href="#glyph-Z" width="120" height="160"/><text class="label" x="50" y="174">Z</text></g>
+  </g>
+</svg>

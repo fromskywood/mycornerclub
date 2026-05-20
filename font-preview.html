@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyCorner Font Preview</title>
+  <link rel="stylesheet" href="src/styles/fonts.css">
+  <style>
+    @font-face {
+      font-family: "MyCorner";
+      src: url("public/fonts/mycorner/mycorner.woff2") format("woff2"),
+           url("public/fonts/mycorner/mycorner.woff") format("woff");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    body { margin: 0; background: #F2E0CD; color: #1D1813; font-family: Georgia, serif; }
+    main { max-width: 1100px; margin: 0 auto; padding: 48px 24px 72px; }
+    h1 { margin: 0 0 32px; font-size: 18px; letter-spacing: 0.08em; text-transform: uppercase; color: #685E53; }
+    .sample { font-family: "MyCorner", sans-serif; font-size: clamp(42px, 8vw, 92px); line-height: 1.08; margin: 26px 0; overflow-wrap: anywhere; }
+    .small { font-size: clamp(32px, 6vw, 64px); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>MyCorner Font Preview</h1>
+    <div class="sample">MY CORNER CLUB</div>
+    <div class="sample">My Corner Club</div>
+    <div class="sample">Что-то про шмотки</div>
+    <div class="sample">вещи в витрине</div>
+    <div class="sample small">online magazine & private women's club</div>
+    <div class="sample small">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+    <div class="sample small">abcdefghijklmnopqrstuvwxyz</div>
+    <div class="sample small">0123456789</div>
+    <div class="sample small">. , ! ? : ; ' " - _ ( ) / &amp;</div>
+  </main>
+</body>
+</html>

@@ -6,7 +6,7 @@
 const CONTENT = {
 
   // ── Ссылки ──────────────────────────────────
-  buyLink:       "#buy",          // ← замените на ссылку оплаты
+  buyLink:       "https://shagaischool.ru/club",
   demoLink:      "https://t.me/+EMsKn9ZowtA3Yjky",
   instagramLink: "https://instagram.com/zhukova_dasha_",
   telegramLink:  "#",             // ← замените на ссылку Telegram-канала

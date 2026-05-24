@@ -33,7 +33,7 @@ const CONTENT = {
 
     hero: {
       tagline:      "Онлайн-журнал\nи закрытый женский клуб",
-      taglineNote:  "Что-то про шмотки",
+      taglineNote:  "«Что-то про шмотки»",
       subtitle:     "О стиле, самовыражении, уюте и маленьких вещах,\nкоторые помогают лучше понять себя",
       cta:      "Купить подписку",
       demoCta:  "Открыть демо"
@@ -293,7 +293,7 @@ const CONTENT = {
 
     hero: {
       tagline:      "Online magazine\n& private women's club",
-      taglineNote:  "Something about clothes",
+      taglineNote:  "\"Something about clothes\"",
       subtitle:     "About style, self-expression, warmth and the small things\nthat help you know yourself better",
       cta:      "Get subscription",
       demoCta:  "Try demo"

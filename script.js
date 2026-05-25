@@ -471,14 +471,20 @@
     prev?.addEventListener('click', () => slideToReview(reviewsCarousel.index - 1));
     next?.addEventListener('click', () => slideToReview(reviewsCarousel.index + 1));
 
-    // Touch/swipe
+    // Touch/swipe — ignore vertical scrolls to avoid conflict with card reading
     const track = $('#reviewsTrack');
     if (track) {
-      let startX = 0;
-      track.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
+      let startX = 0, startY = 0;
+      track.addEventListener('touchstart', e => {
+        startX = e.touches[0].clientX;
+        startY = e.touches[0].clientY;
+      }, { passive: true });
       track.addEventListener('touchend', e => {
         const dx = e.changedTouches[0].clientX - startX;
-        if (Math.abs(dx) > 40) slideToReview(reviewsCarousel.index + (dx < 0 ? 1 : -1));
+        const dy = e.changedTouches[0].clientY - startY;
+        if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) {
+          slideToReview(reviewsCarousel.index + (dx < 0 ? 1 : -1));
+        }
       }, { passive: true });
     }
 
@@ -500,7 +506,11 @@
       });
     }
 
+    let prevWidth = window.innerWidth;
     window.addEventListener('resize', () => {
+      const newWidth = window.innerWidth;
+      if (newWidth === prevWidth) return;
+      prevWidth = newWidth;
       updateCarouselPerView();
       slideToReview(0);
     }, { passive: true });

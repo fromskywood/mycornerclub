@@ -236,23 +236,30 @@
   }
 
   function renderReviewCard(r) {
-    const platformIcon = r.platform === 'instagram'
-      ? `<svg class="platform-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+    const igIcon = `<svg class="platform-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
            <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/>
            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
-         </svg>`
-      : `<svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor">
+         </svg>`;
+    const tgIcon = `<svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor">
            <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm5.5 8.3l-2 9.5c-.1.7-.5.8-1.1.5l-3-2.2-1.4 1.4c-.2.2-.3.3-.6.3l.2-3.1 5.6-5c.2-.2-.1-.3-.4-.1l-6.9 4.3-2.9-.9c-.6-.2-.7-.6.1-.9l11.6-4.5c.5-.2 1 .1.8.7z"/>
          </svg>`;
 
-    const handleHtml = r.handle
-      ? `<span class="review-handle">${platformIcon}${r.handle}</span>`
-      : '';
+    let handleHtml = '';
+    if (r.instagram && r.handle) {
+      handleHtml = `<a class="review-handle" href="${r.instagram}" target="_blank" rel="noopener noreferrer">${igIcon}${r.handle}</a>`;
+    } else if (r.handle) {
+      const icon = r.platform === 'instagram' ? igIcon : tgIcon;
+      handleHtml = `<span class="review-handle">${icon}${r.handle}</span>`;
+    }
+
+    const avatarHtml = r.avatar
+      ? `<img class="review-avatar" src="${r.avatar}" alt="${r.name}">`
+      : `<div class="review-avatar review-avatar-placeholder"></div>`;
 
     return `
       <div class="review-card">
         <div class="review-header">
-          <img class="review-avatar" src="${r.avatar}" alt="${r.name}">
+          ${avatarHtml}
           <div class="review-meta">
             <span class="review-name">${r.name}</span>
             ${handleHtml}

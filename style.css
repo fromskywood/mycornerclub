@@ -1657,6 +1657,10 @@ html[lang="ru"] .editorial-title-en { display: none; }
   background: var(--paper-deep);
   flex-shrink: 0;
 }
+.review-avatar-placeholder {
+  border: 1.5px solid var(--terracotta);
+  background: transparent;
+}
 .review-meta { flex: 1; }
 .review-name {
   font-weight: 600;
@@ -1671,7 +1675,9 @@ html[lang="ru"] .editorial-title-en { display: none; }
   align-items: center;
   gap: 4px;
   margin-top: 2px;
+  text-decoration: none;
 }
+a.review-handle:hover { color: var(--terracotta); }
 .platform-icon { width: 14px; height: 14px; flex-shrink: 0; }
 .review-text {
   color: var(--ink-brown);

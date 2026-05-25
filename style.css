@@ -1763,7 +1763,7 @@ a.review-handle:hover { color: var(--terracotta); }
   transition: max-height 0.4s ease;
 }
 @media (hover: hover) {
-  .review-card:hover .review-text { max-height: 40rem; }
+  .review-card:hover .review-text { max-height: 200rem; }
 }
 
 /* review chevron — mobile only */
@@ -1774,7 +1774,7 @@ a.review-handle:hover { color: var(--terracotta); }
 }
 @media (max-width: 767px) {
   .review-chevron { display: flex; }
-  .review-card.open .review-text { max-height: 40rem; }
+  .review-card.open .review-text { max-height: 200rem; }
   .review-card.open .review-chevron { transform: rotate(180deg); }
 }
 

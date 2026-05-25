@@ -334,7 +334,12 @@
         </div>
       </div>
     `).join('');
+  }
 
+  // ── FAQ: accordion (one listener, set up once) ─
+  function setupFAQ() {
+    const list = $('#faqList');
+    if (!list) return;
     list.addEventListener('click', e => {
       const btn = e.target.closest('.faq-question');
       if (!btn) return;
@@ -342,7 +347,6 @@
       const answer = item.querySelector('.faq-answer');
       const isOpen = item.classList.contains('open');
 
-      // close all
       $$('.faq-item.open', list).forEach(openItem => {
         openItem.classList.remove('open');
         openItem.querySelector('.faq-answer').style.maxHeight = '0';
@@ -884,6 +888,7 @@
     setupMobileMenu();
     setupAboutAccordion();
     setupCarousel();
+    setupFAQ();
     setupSmoothScroll();
     setupLegalPopups();
     setupCookieBanner();

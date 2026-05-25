@@ -1,0 +1,287 @@
+/* =========================================================
+   My Corner — Foundations
+   Colors + Type tokens. Import this once, reference vars.
+   ========================================================= */
+
+/* Webfonts -- see fonts/README.md for substitutions */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Caveat:wght@400;500;600&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  /* ---------- Color: paper & neutrals ---------- */
+  /* Soft, warm "old paper" tones. The whole brand sits on cream. */
+  --paper:        #F5EFE6;   /* primary background — warm cream */
+  --paper-deep:   #EFE6D8;   /* slightly darker cream for cards-on-cream */
+  --paper-soft:   #FBF7F1;   /* almost-white, used sparingly */
+  --linen:        #E9DFCF;   /* card edge / subtle dividers */
+  --linen-deep:   #D9CDB8;   /* deeper linen, hovered card edge */
+
+  /* ---------- Color: ink (text) ---------- */
+  --ink:          #2A2622;   /* graphite, primary text */
+  --ink-soft:     #4A413B;   /* secondary text */
+  --ink-mute:     #8A7F76;   /* tertiary / metadata */
+  --ink-faint:    #B8AC9F;   /* placeholders, inactive */
+
+  /* ---------- Color: brand accents ---------- */
+  /* Coral-red is the SIGNATURE — it's the shoes in the logo.
+     Use sparingly: CTA, badges, single-word emphasis. */
+  --coral:        #C84A2E;   /* primary accent — terracotta-coral */
+  --coral-deep:   #A23A22;   /* hover/pressed coral */
+  --coral-soft:   #E97559;   /* lighter coral, decorative */
+  --coral-tint:   #F4D7CC;   /* coral wash for backgrounds */
+
+  --rose:         #C9817A;   /* dusty rose — secondary accent */
+  --rose-soft:    #E5C4BD;   /* rose tint */
+
+  --sage:         #8A9080;   /* dusty sage — quiet accent */
+  --sage-soft:    #C8CFC0;
+
+  --ochre:        #B89055;   /* warm ochre — used in editorial flourishes */
+
+  /* ---------- Semantic ---------- */
+  --bg:           var(--paper);
+  --bg-elevated:  var(--paper-soft);
+  --surface:      var(--paper-soft);
+  --surface-deep: var(--paper-deep);
+  --border:       var(--linen);
+  --border-strong:var(--linen-deep);
+
+  --fg:           var(--ink);
+  --fg-soft:      var(--ink-soft);
+  --fg-mute:      var(--ink-mute);
+  --fg-faint:     var(--ink-faint);
+  --fg-on-coral:  var(--paper-soft);
+
+  --accent:       var(--coral);
+  --accent-deep:  var(--coral-deep);
+
+  /* status (used very lightly) */
+  --success:      #6F8B65;
+  --warning:      #B89055;
+  --danger:       var(--coral-deep);
+
+  /* ---------- Type ---------- */
+  /* Three-voice system:
+     1. Display SERIF (editorial titles, magazine covers) — Cormorant Garamond
+     2. Body / UI SANS (paragraphs, navigation, buttons) — Inter
+     3. HAND voice (handwritten notes, quotes, "from editor") — Caveat
+        ↳ The wordmark "MY CORNER" itself is a hand-drawn LOGO IMAGE,
+          not a font. Do not try to set it in Caveat — always use logo.png.
+  */
+  --font-serif:   'Cormorant Garamond', 'Garamond', 'Georgia', serif;
+  --font-sans:    'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  --font-hand:    'Caveat', 'Bradley Hand', cursive;
+  --font-mono:    ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* Type scale (1.25 modular, gently). Editorial—generous line-height. */
+  --t-xs:   0.75rem;   /* 12px  — micro, eyebrow uppercase */
+  --t-sm:   0.875rem;  /* 14px  — fine print, captions */
+  --t-base: 1rem;      /* 16px  — body */
+  --t-md:   1.125rem;  /* 18px  — comfortable body */
+  --t-lg:   1.375rem;  /* 22px  — sub-headline */
+  --t-xl:   1.75rem;   /* 28px  — H3 */
+  --t-2xl:  2.25rem;   /* 36px  — H2 */
+  --t-3xl:  3rem;      /* 48px  — H1 */
+  --t-4xl:  4.25rem;   /* 68px  — display / cover */
+  --t-5xl:  6rem;      /* 96px  — magazine cover */
+
+  --lh-tight:  1.1;
+  --lh-snug:   1.25;
+  --lh-normal: 1.5;
+  --lh-loose:  1.7;
+
+  --tracking-tight:  -0.01em;
+  --tracking-normal: 0;
+  --tracking-wide:   0.06em;     /* eyebrow uppercase */
+  --tracking-wider:  0.18em;     /* section labels (СВЕЖИЙ ВЫПУСК) */
+
+  /* ---------- Spacing (8-pt grid, but generous) ---------- */
+  --s-1:  4px;
+  --s-2:  8px;
+  --s-3:  12px;
+  --s-4:  16px;
+  --s-5:  20px;
+  --s-6:  24px;
+  --s-8:  32px;
+  --s-10: 40px;
+  --s-12: 48px;
+  --s-16: 64px;
+  --s-20: 80px;
+  --s-24: 96px;
+
+  /* ---------- Radii ---------- */
+  /* Soft & rounded — never sharp. Pills for chips/CTAs. */
+  --r-sm:    8px;
+  --r-md:    14px;
+  --r-lg:    20px;
+  --r-xl:    28px;
+  --r-2xl:   36px;
+  --r-pill:  999px;
+
+  /* ---------- Shadows ---------- */
+  /* Whisper-soft. Warm-tinted, never grey. */
+  --shadow-1:  0 1px 2px rgba(74, 65, 59, 0.04),
+               0 2px 6px rgba(74, 65, 59, 0.05);
+  --shadow-2:  0 2px 4px rgba(74, 65, 59, 0.05),
+               0 8px 22px rgba(74, 65, 59, 0.08);
+  --shadow-3:  0 4px 10px rgba(74, 65, 59, 0.06),
+               0 18px 48px rgba(74, 65, 59, 0.10);
+  /* Inner edge glow used on buttons/cards, suggests pressed paper */
+  --shadow-inset: inset 0 0 0 1px rgba(255, 255, 255, 0.55),
+                  inset 0 -1px 0 rgba(74, 65, 59, 0.04);
+
+  /* ---------- Motion ---------- */
+  --ease-out:     cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out:  cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-soft:    cubic-bezier(0.4, 0.0, 0.2, 1);
+  --dur-fast:     160ms;
+  --dur-base:     260ms;
+  --dur-slow:     520ms;
+
+  /* ---------- Layout ---------- */
+  --container-narrow: 640px;   /* article column */
+  --container:        960px;
+  --container-wide:   1200px;
+}
+
+/* =========================================================
+   Semantic element styles
+   ========================================================= */
+
+html { background: var(--bg); color: var(--fg); }
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--t-md);
+  line-height: var(--lh-normal);
+  color: var(--fg);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Headings — editorial serif, generous, slightly tight tracking */
+h1, .h1 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: var(--t-3xl);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg);
+  margin: 0 0 var(--s-4);
+  text-wrap: pretty;
+}
+h2, .h2 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: var(--t-2xl);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg);
+  margin: 0 0 var(--s-3);
+  text-wrap: pretty;
+}
+h3, .h3 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: var(--t-xl);
+  line-height: var(--lh-snug);
+  color: var(--fg);
+  margin: 0 0 var(--s-3);
+}
+h4, .h4 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: var(--t-lg);
+  line-height: var(--lh-snug);
+  color: var(--fg);
+  margin: 0 0 var(--s-2);
+}
+
+/* Eyebrow — small uppercase label in coral, used above headlines */
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: var(--t-xs);
+  font-weight: 600;
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--coral);
+}
+
+/* Display cover — magazine cover-style, larger serif */
+.display {
+  font-family: var(--font-serif);
+  font-size: var(--t-5xl);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+}
+
+/* Body */
+p, .p {
+  font-family: var(--font-sans);
+  font-size: var(--t-md);
+  line-height: var(--lh-loose);
+  color: var(--fg-soft);
+  margin: 0 0 var(--s-4);
+  text-wrap: pretty;
+}
+p.lead {
+  font-family: var(--font-serif);
+  font-size: var(--t-lg);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--fg);
+  line-height: var(--lh-normal);
+}
+
+/* Hand — for handwritten notes, "from the editor", marginalia */
+.hand {
+  font-family: var(--font-hand);
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: var(--ink-soft);
+}
+.hand-coral { color: var(--coral); }
+
+small, .small, .caption {
+  font-size: var(--t-sm);
+  color: var(--fg-mute);
+}
+
+/* Pull quote — italic serif, oversize, with hanging hand-drawn quote glyph */
+blockquote, .quote {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: var(--t-xl);
+  line-height: var(--lh-snug);
+  color: var(--fg);
+  border: none;
+  padding: 0;
+  margin: var(--s-8) 0;
+}
+
+/* Links — subtle underline in coral on hover */
+a {
+  color: var(--coral);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--dur-fast) var(--ease-out),
+              color var(--dur-fast) var(--ease-out);
+}
+a:hover { border-bottom-color: var(--coral); }
+
+/* Code (rare in this brand) */
+code, pre {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background: var(--paper-deep);
+  border-radius: var(--r-sm);
+  padding: 0.1em 0.4em;
+  color: var(--ink-soft);
+}
+
+/* Selection — soft coral wash */
+::selection { background: var(--coral-tint); color: var(--ink); }
+
+/* Bilingual hint: tighten line-height slightly when Cyrillic mixes with Latin */
+[lang="ru"] { line-height: 1.45; }

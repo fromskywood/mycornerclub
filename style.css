@@ -1002,9 +1002,8 @@ html[lang="ru"] .editorial-title-en { display: none; }
 .cover-logo-overlay {
   position: absolute;
   top: 14px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 118px;
+  left: 14px;
+  width: 83px;
   z-index: 2;
   pointer-events: none;
   filter: brightness(0) invert(1);

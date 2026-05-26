@@ -588,10 +588,10 @@
     if (!wrap) return;
 
     const slides = [
-      { src: 'images/Daria2/1.jpg', ru: 'Весна',  en: 'Spring' },
-      { src: 'images/Daria2/2.jpg', ru: 'Лето',   en: 'Summer' },
-      { src: 'images/Daria2/3.jpg', ru: 'Осень',  en: 'Autumn' },
-      { src: 'images/Daria2/4.jpg', ru: 'Зима',   en: 'Winter' },
+      { src: 'images/spring.png', ru: 'Весна',  en: 'Spring' },
+      { src: 'images/summer.png', ru: 'Лето',   en: 'Summer' },
+      { src: 'images/autumn.png', ru: 'Осень',  en: 'Autumn' },
+      { src: 'images/winter.png', ru: 'Зима',   en: 'Winter' },
     ];
 
     slides.forEach((s, i) => {

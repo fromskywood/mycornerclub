@@ -1603,7 +1603,7 @@ html[lang="ru"] .editorial-title-en { display: none; }
 .demo-preview-wrap {
   position: relative;
   display: inline-block;
-  border-radius: 12px;
+  border-radius: 16px;
   overflow: hidden;
   background: var(--paper-soft);
   box-shadow: 0 8px 32px rgba(29,24,19,0.18), 0 2px 8px rgba(29,24,19,0.10);
@@ -1612,6 +1612,7 @@ html[lang="ru"] .editorial-title-en { display: none; }
   max-width: 320px;
   width: 100%;
   display: block;
+  border-radius: 16px;
   position: relative;
   z-index: 1;
 }

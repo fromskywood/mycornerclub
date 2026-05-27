@@ -861,22 +861,7 @@
     img.alt = '';
     img.className = 'dressup-img';
 
-    const svgNS = 'http://www.w3.org/2000/svg';
-    const svg = document.createElementNS(svgNS, 'svg');
-    svg.setAttribute('class', 'dressup-frame');
-    svg.setAttribute('viewBox', '0 0 250 570');
-    svg.setAttribute('fill', 'none');
-    svg.setAttribute('aria-hidden', 'true');
-    const path = document.createElementNS(svgNS, 'path');
-    path.setAttribute('d', 'M12,10 C60,4 180,6 240,10 C246,12 248,20 246,100 C244,220 244,390 246,520 C246,548 240,556 202,554 C156,552 78,552 13,552 C6,552 2,542 4,468 C6,340 6,130 12,10 Z');
-    path.setAttribute('stroke', '#AD4B27');
-    path.setAttribute('stroke-width', '2');
-    path.setAttribute('stroke-linecap', 'round');
-    path.setAttribute('stroke-linejoin', 'round');
-    svg.appendChild(path);
-
     wrap.appendChild(img);
-    wrap.appendChild(svg);
     slot.appendChild(wrap);
 
     let current = 0;

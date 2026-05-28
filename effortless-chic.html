@@ -911,6 +911,50 @@ p .it { font-style: italic; color: var(--ink); }
 .illus-wrap-right[data-shape] {
   shape-outside: var(--shape-img);
 }
+.sheet[data-screen-label="02-1 В чем мой секрет"] .illus-wrap-right,
+.sheet[data-screen-label="04-1 Почему нечего надеть"] .illus-wrap-right {
+  width: clamp(260px, 42%, 390px);
+  margin: 0 0 22px 30px;
+  shape-outside: inset(0 round 4px) !important;
+  shape-margin: 18px;
+}
+.sheet[data-screen-label="03-1 Нетрадиционные ценности"] .illus-wrap-right {
+  width: clamp(260px, 42%, 380px);
+  margin: 0 0 22px 30px;
+  shape-outside: inset(0 round 4px) !important;
+  shape-margin: 18px;
+}
+.sheet[data-screen-label="03-1 Нетрадиционные ценности"] .reasons {
+  display: block;
+}
+.sheet[data-screen-label="03-1 Нетрадиционные ценности"] .reason {
+  display: block;
+  position: relative;
+  padding-left: 88px;
+  margin-bottom: var(--s-10);
+}
+.sheet[data-screen-label="03-1 Нетрадиционные ценности"] .reason::before {
+  position: absolute;
+  left: 0;
+  top: 0.04em;
+}
+.sheet[data-screen-label="09-3 Инвестиции vs экономия"] .illus-wrap-right {
+  width: min(42%, 230px);
+  margin: 0 0 16px 24px !important;
+  shape-outside: inset(0 round 4px) !important;
+  shape-margin: 16px;
+}
+.sheet[data-screen-label="02-1 В чем мой секрет"] .sheet-content > p,
+.sheet[data-screen-label="03-1 Нетрадиционные ценности"] .reason-lead,
+.sheet[data-screen-label="03-1 Нетрадиционные ценности"] .reason p,
+.sheet[data-screen-label="04-1 Почему нечего надеть"] .sheet-content > p,
+.sheet[data-screen-label="09-3 Инвестиции vs экономия"] .rule p {
+  text-shadow:
+    0 0 1px var(--paper),
+    0 0 4px var(--paper),
+    1px 0 0 var(--paper),
+    -1px 0 0 var(--paper);
+}
 .illus-wrap-right.ch05-worlds-figure {
   width: clamp(220px, 42%, 330px);
   margin: -4px -4px 14px 24px;
@@ -955,6 +999,18 @@ p .it { font-style: italic; color: var(--ink); }
     margin: 14px auto 18px !important;
     display: block;
     shape-outside: none !important;
+  }
+  .sheet[data-screen-label="03-1 Нетрадиционные ценности"] .reasons {
+    display: grid;
+  }
+  .sheet[data-screen-label="03-1 Нетрадиционные ценности"] .reason {
+    display: grid;
+    position: static;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  .sheet[data-screen-label="03-1 Нетрадиционные ценности"] .reason::before {
+    position: static;
   }
   .illus img { border-radius: 4px; }
 }
@@ -1283,6 +1339,15 @@ body { background: var(--paper); background-image: none; }
   text-transform: none;
   color: rgba(138, 127, 118, 0.72);
   text-align: right;
+}
+.final-copyright {
+  max-width: 640px;
+  margin: 22px auto 0 !important;
+  font-family: var(--font-sans);
+  font-size: 10px !important;
+  line-height: 1.45 !important;
+  color: rgba(74, 65, 59, 0.62) !important;
+  text-align: center;
 }
 
 .sheet-tag {
@@ -2355,6 +2420,7 @@ body { background: var(--paper); background-image: none; }
       <a class="cta-button" href="#">Хочу в&nbsp;клуб «Что-то про шмотки»</a>
       <p class="cta-foot" style="text-align: center;">Присоединиться к&nbsp;сообществу и&nbsp;начать жить свою жизнь СЕЙЧАС</p>
     </div>
+    <p class="final-copyright">© Дарья Жукова. Все права защищены. Гайд предоставляется для личного использования; копирование и&nbsp;распространение запрещены.</p>
   </div>
   <div class="sheet-foot">
     <span>Гл. 11 · Приглашение в клуб</span>
@@ -2376,13 +2442,6 @@ body { background: var(--paper); background-image: none; }
     if (numEl) {
       const num = String(i + 1).padStart(2, '0');
       numEl.innerHTML = '<span class="num">' + num + '</span> <span class="of">/ ' + totalStr + '</span>';
-    }
-    const foot = s.querySelector('.sheet-foot');
-    if (foot && !foot.querySelector('.copyright')) {
-      const copyright = document.createElement('span');
-      copyright.className = 'copyright';
-      copyright.textContent = '© Дарья Жукова. Все права защищены. Гайд предоставляется для личного использования; копирование и распространение запрещены.';
-      foot.appendChild(copyright);
     }
   });
 })();

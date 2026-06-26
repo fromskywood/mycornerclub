@@ -314,7 +314,7 @@ const CONTENT = {
         },
         {
           q: "Как получить доступ после оплаты?",
-          a: "После оплаты придёт ссылка на журнал и уникальный пароль. Всё работает без VPN — и в России, и за рубежом."
+          a: "После оплаты придёт ссылка на журнал."
         },
         {
           q: "Могу ли я попробовать до покупки?",
@@ -654,7 +654,7 @@ const CONTENT = {
         },
         {
           q: "How do I get access after subscribing?",
-          a: "After payment you'll receive a link and a unique password. Everything works without VPN — both in Russia and abroad."
+          a: "After payment you'll receive a link."
         },
         {
           q: "Can I try before subscribing?",

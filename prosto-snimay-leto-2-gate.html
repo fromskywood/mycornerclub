@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Снимая лето часть 2 — Гайд · My Corner</title>
+  <meta name="description" content="Фотогайд «Снимая лето часть 2. Магия момента» от My Corner.">
+  <link rel="icon" type="image/png" href="images/logo-mark.png">
+
+  <link rel="stylesheet" href="src/styles/fonts.css">
+
+  <style>
+    :root {
+      --paper: #F2E0CD;
+      --paper-soft: #E0CCB6;
+      --paper-deep: #CCB69E;
+      --terracotta: #AD4B27;
+      --muted-ink: #685E53;
+      --ink-brown: #46382D;
+      --ink: #1D1813;
+      --font-display: "MyCorner", "Cormorant Garamond", Georgia, serif;
+      --font-body: "Cormorant Garamond", Georgia, serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-body);
+      font-size: 18px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: var(--terracotta); }
+
+    .gate-wrap {
+      max-width: 480px;
+      margin: 0 auto;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px 24px;
+    }
+
+    .gate-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+      color: var(--muted-ink);
+      text-decoration: none;
+      margin-bottom: 48px;
+      letter-spacing: 0.03em;
+      transition: color 0.2s;
+    }
+    .gate-back:hover { color: var(--terracotta); }
+
+    .gate-eyebrow {
+      display: block;
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      color: var(--terracotta);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .gate-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 6vw, 2.8rem);
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.1;
+      color: var(--ink);
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .gate-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .gate-input {
+      font-family: var(--font-body);
+      font-size: 1.05rem;
+      padding: 14px 20px;
+      border-radius: 50px;
+      border: 2px solid var(--paper-deep);
+      background: var(--paper-soft);
+      color: var(--ink);
+      text-align: center;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .gate-input:focus { border-color: var(--terracotta); }
+
+    .gate-submit {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 32px;
+      border-radius: 50px;
+      border: 2px solid var(--terracotta);
+      background: var(--terracotta);
+      color: #fff;
+      font-family: var(--font-body);
+      font-size: 1.05rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.25s;
+    }
+    .gate-submit:hover { background: var(--ink-brown); border-color: var(--ink-brown); }
+
+    .gate-error {
+      color: var(--terracotta);
+      font-size: 0.9rem;
+      text-align: center;
+      min-height: 1.4em;
+    }
+
+    .gate-footer {
+      margin-top: 56px;
+      padding-top: 24px;
+      border-top: 1px solid var(--paper-deep);
+      text-align: center;
+    }
+    .gate-footer img { margin: 0 auto; }
+    .gate-footer-note {
+      margin-top: 12px;
+      font-size: 0.85rem;
+      color: var(--muted-ink);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gate-wrap">
+
+    <a href="index.html" class="gate-back">
+      ← My Corner
+    </a>
+
+    <span class="gate-eyebrow">Гайд · My Corner</span>
+    <h1 class="gate-title">Снимая лето часть 2</h1>
+
+    <form class="gate-form" id="gateForm">
+      <input
+        type="password"
+        id="gatePassword"
+        class="gate-input"
+        placeholder="Введите пароль"
+        autocomplete="off"
+        required
+      >
+      <button type="submit" class="gate-submit">Открыть гайд</button>
+      <p class="gate-error" id="gateError"></p>
+    </form>
+
+    <footer class="gate-footer">
+      <img src="images/logo.png" alt="My Corner" height="28">
+      <p class="gate-footer-note">© My Corner · by Dasha Zhukova</p>
+    </footer>
+
+  </div>
+
+  <script>
+    const PASSWORD_HASH = "f895ebb14f6339cff659230d40b523fba24663aa59073d22bff4246f1063dd28";
+    const GUIDE_URL = "prosto-snimay-leto-2.html";
+
+    async function sha256(text) {
+      const data = new TextEncoder().encode(text);
+      const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+      return Array.from(new Uint8Array(hashBuffer))
+        .map(b => b.toString(16).padStart(2, "0"))
+        .join("");
+    }
+
+    document.getElementById("gateForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const input = document.getElementById("gatePassword").value;
+      const errorEl = document.getElementById("gateError");
+      const hash = await sha256(input);
+      if (hash === PASSWORD_HASH) {
+        window.location.href = GUIDE_URL;
+      } else {
+        errorEl.textContent = "Неверный пароль";
+      }
+    });
+  </script>
+
+</body>
+</html>

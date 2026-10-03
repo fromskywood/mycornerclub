@@ -22,3 +22,6 @@
 .student-track{scroll-snap-type:none;overflow-anchor:none}
 
 .student-track .embed-box[hidden]{display:none}
+/* Preserve portrait proportions at every viewport width. */
+.october .hero-main{height:auto;aspect-ratio:3/4;object-fit:cover}
+.october .photo-strip img{height:auto;aspect-ratio:3/4;object-fit:cover}

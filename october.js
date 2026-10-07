@@ -1,12 +1,3 @@
-// Add the payment provider URL here when it is ready.
-const PAYMENT_URL = '';
-if (PAYMENT_URL) {
-  const link = document.querySelector('#payment-link');
-  link.href = PAYMENT_URL;
-  link.hidden = false;
-  document.querySelector('#payment-pending').hidden = true;
-  document.querySelector('#payment-note').hidden = true;
-}
 const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
 function setupCarousel(trackId, prevId, nextId) {
   const track = document.getElementById(trackId);

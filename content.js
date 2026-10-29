@@ -12,7 +12,7 @@ const CONTENT = {
   telegramLink:  "#",             // ← замените на ссылку Telegram-канала
 
   // ── Цена ────────────────────────────────────
-  price:    "1 300 ₽",
+  price:    "990 ₽",
   period_ru: "в месяц",
   period_en: "per month",
 

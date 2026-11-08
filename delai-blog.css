@@ -4,3 +4,20 @@
 @media(max-width:600px){#delai-blog{padding:0 6%;font-size:20px}#delai-blog .hero{grid-template-columns:1fr;padding-top:35px;gap:30px}#delai-blog h1{font-size:68px}#delai-blog .hero-photo{aspect-ratio:3/4}#delai-blog .head span{font-size:14px}#delai-blog .ribbon{display:grid;grid-template-columns:1fr 1fr;font-size:18px}#delai-blog .intro{padding:45px 0}#delai-blog .program-heading{display:block}#delai-blog summary{font-size:24px;gap:12px}#delai-blog details p{margin-left:0;font-size:21px}#delai-blog .author,#delai-blog .join{grid-template-columns:1fr;gap:28px}#delai-blog .author img{max-height:450px}#delai-blog .join img{display:none}#delai-blog .format{padding:25px}#delai-blog .footer{flex-wrap:wrap}}
 
 html{scroll-behavior:smooth}body{margin:0;background:#F2E0CD}#delai-blog{max-width:1240px;margin:auto}#delai-blog summary,#delai-blog button,#delai-blog a{cursor:pointer}#delai-blog .cta:disabled{cursor:default;opacity:.65}#delai-blog img{display:block}#delai-blog .head a{display:inline-block}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Keep portrait photos compact and preserve their intrinsic proportions. */
+#delai-blog .hero-photo,
+#delai-blog .author img,
+#delai-blog .join img {
+  width: min(100%, 320px);
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  margin-inline: auto;
+}
+#delai-blog .photo-label { text-align: center; }
+#delai-blog .join img { width: min(100%, 260px); }
+@media (max-width: 600px) {
+  #delai-blog .hero-photo,
+  #delai-blog .author img { width: min(100%, 220px); max-height: none; }
+}

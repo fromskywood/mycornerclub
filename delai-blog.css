@@ -24,3 +24,8 @@ html{scroll-behavior:smooth}body{margin:0;background:#F2E0CD}#delai-blog{max-wid
 
 #delai-blog .price { display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 20px; }
 #delai-blog .old-price { font-size: 0.6em; color: #685E53; text-decoration-thickness: 1.5px; }
+
+#delai-blog .format-standalone { margin: 0 0 55px; }
+#delai-blog .format-standalone p { max-width: 850px; }
+#delai-blog .author-bio { font-size: 22px; line-height: 1.5; }
+@media (max-width: 600px) { #delai-blog .format-standalone { margin-bottom: 40px; } }
